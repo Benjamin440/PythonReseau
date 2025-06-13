@@ -1,9 +1,8 @@
-import Crud
 import Authent
 import getpass
 def main ():
     while True :
-        print("Bienvenue sur l'AD")
+        print("Bienvenue sur la gestion de fichier")
         print("1. Connexion")
         print("2. Quitter")
         choix = input("Que voulez-vous faire ? ")
