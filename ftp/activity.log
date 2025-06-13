@@ -1,0 +1,8 @@
+2025-06-13 08:58:40,674 - INFO - Error listing C:/New_Tech\Paris: [WinError 3] Le chemin d’accès spécifié est introuvable: 'C:/New_Tech\\Paris'
+2025-06-13 08:58:40,674 - INFO - Error listing C:/New_Tech\Marseille: [WinError 3] Le chemin d’accès spécifié est introuvable: 'C:/New_Tech\\Marseille'
+2025-06-13 08:58:40,674 - INFO - Error listing C:/New_Tech\Rennes: [WinError 3] Le chemin d’accès spécifié est introuvable: 'C:/New_Tech\\Rennes'
+2025-06-13 08:58:40,674 - INFO - Error listing C:/New_Tech\Grenoble: [WinError 3] Le chemin d’accès spécifié est introuvable: 'C:/New_Tech\\Grenoble'
+2025-06-13 08:59:41,862 - INFO - Listed directory: C:/New_Tech\Paris
+2025-06-13 08:59:41,863 - INFO - Listed directory: C:/New_Tech\Marseille
+2025-06-13 08:59:41,863 - INFO - Listed directory: C:/New_Tech\Rennes
+2025-06-13 08:59:41,864 - INFO - Listed directory: C:/New_Tech\Grenoble
