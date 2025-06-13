@@ -119,7 +119,9 @@ def menu_super_admin_ftp():
                 ftp_manager.add_file(ftp, fichier)
                 print(f" Fichier '{fichier}' créé avec succès.")
         elif choice == "6":
-            ftp_manager.copy_item(ftp, fichier)
+            source = input("Entrez le chemin du fichier ou dossier source : ")
+            destination = input("Entrez le chemin de destination : ")
+            ftp_manager.copy_folder(ftp, source, destination)
         elif choice == "7":
             print(f"\nRépertoire courant : {ftp.pwd()}")
             source_path = input("Entrez le chemin du fichier ou dossier à déplacer : ")

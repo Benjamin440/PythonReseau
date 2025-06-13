@@ -68,6 +68,65 @@ def list_files(ftp):
     except Exception as e:
         log_action(f"Error listing files: {e}")
         return []
+    
+def is_directory(ftp, name):
+    current = ftp.pwd()
+    try:
+        ftp.cwd(name)
+        ftp.cwd(current)
+        return True
+    except error_perm:
+        return False
+
+def copy_folder(ftp, source, destination):
+    folder_name = source.strip("/").split("/")[-1]
+    target_dir = f"{destination.rstrip('/')}/{folder_name}"
+
+    # Créer le dossier destination
+    try:
+        ftp.mkd(target_dir)
+        log_action(f"Dossier créé : {target_dir}")
+    except error_perm as e:
+        log_action(f"Dossier {target_dir} existant ou erreur : {e}")
+
+    # Accéder au dossier source
+    try:
+        ftp.cwd(source)
+        items = ftp.nlst()
+    except Exception as e:
+        log_action(f"Erreur d'accès à {source} : {e}")
+        return
+
+    for item in items:
+        # Vérifier si c'est un dossier
+        if is_directory(ftp, item):
+            log_action(f"Ignoré (dossier) : {item}")
+            continue
+
+        # Télécharger même les fichiers vides
+        try:
+            with tempfile.NamedTemporaryFile(delete=False) as tmp_file:
+                ftp.retrbinary(f"RETR {item}", tmp_file.write)
+                temp_path = tmp_file.name
+        except Exception as e:
+            log_action(f"Erreur RETR {item} : {e}")
+            continue
+
+        # Aller dans le bon dossier de destination
+        try:
+            ftp.cwd(target_dir)
+            with open(temp_path, "rb") as f:
+                ftp.storbinary(f"STOR {item}", f)
+            log_action(f"Copié : {item} → {target_dir}")
+        except Exception as e:
+            log_action(f"Erreur STOR {item} → {target_dir} : {e}")
+        finally:
+            os.remove(temp_path)
+
+        # Revenir dans le dossier source
+        ftp.cwd(source)
+
+    ftp.cwd("..")
 
 def rename_ftp(ftp, old_name, new_name):
     try:
