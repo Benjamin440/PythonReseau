@@ -4,4 +4,4 @@ FTP_USER = "admin"
 FTP_PASS = "kasgruntESGI44!"
 
 REGIONS = ["Paris", "Marseille", "Rennes", "Grenoble"]
-ROOT_DIR = "C:/New_Tech"
+ROOT_DIR = "C:/New_Tech" #chemin system
