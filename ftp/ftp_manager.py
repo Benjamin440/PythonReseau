@@ -1,8 +1,11 @@
 from ftplib import FTP
 from config import FTP_HOST, FTP_PORT, FTP_USER, FTP_PASS
 from logger import log_action
+from logger import setup_logger
 
+    
 def connect_ftp():
+    setup_logger()
     ftp = FTP()
     ftp.connect(FTP_HOST, FTP_PORT)
     ftp.login(FTP_USER, FTP_PASS)
@@ -12,8 +15,9 @@ def connect_ftp():
 
 def list_dossier(ftp):
     print("📁 Contenu du répertoire distant :")
-    
     ftp.dir()
+
+    
 
 def rename_ftp(ftp, old_name, new_name):
     try:

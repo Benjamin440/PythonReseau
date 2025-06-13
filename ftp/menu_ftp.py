@@ -1,8 +1,8 @@
 import file_manager
 import ftp_manager
 
-
 def menu_super_admin_ftp():
+    
 
     ftp = ftp_manager.connect_ftp()
     print("--- Menu Super Admin ---")

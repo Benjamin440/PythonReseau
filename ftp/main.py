@@ -6,7 +6,7 @@ import menu_ftp as menu
 from logger import setup_logger
 
 def main():
-    setup_logger()
+    
 
     menu.menu_super_admin_ftp()
 

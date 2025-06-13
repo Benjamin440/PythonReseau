@@ -10,7 +10,7 @@ def list_directory(path):
     except Exception as e:
         log_action(f"Error listing {path}: {e}")
         return []
-
+    
 def change_directory(path):
     try:
         os.chdir(path)
