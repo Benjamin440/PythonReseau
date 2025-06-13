@@ -1,4 +1,5 @@
 from ftplib import FTP
+import os
 from config import FTP_HOST, FTP_PORT, FTP_USER, FTP_PASS
 from logger import log_action, setup_logger
 
@@ -14,13 +15,26 @@ def list_dossier(ftp):
     print("Contenu du répertoire distant :")
     ftp.dir()
 
-def add_dossier(ftp, path):
+def add_dossier(ftp, fichier):
     try:
-        ftp.mkd(path)
-        log_action(f"Created directory: {path} on FTP.")
+        ftp.mkd(fichier)
+        log_action(f"Created directory: {fichier} on FTP.")
     except Exception as e:
-        log_action(f"Error creating directory {path}: {e}")
+        log_action(f"Error creating directory {fichier}: {e}")
         print(f"Erreur lors de la création du dossier : {e}")
+
+def add_file(ftp, fichier):
+    with open(fichier, 'w') as f:
+        pass
+    try:
+        with open(fichier, 'rb') as f:
+            ftp.storbinary(f"STOR {fichier}", f)
+            log_action(f"Uploaded file: {fichier} to FTP.")
+    except Exception as e:
+        log_action(f"Error uploading file {fichier}: {e}")
+        print(f"Erreur lors de l'envoi du fichier : {e}")
+    os.remove(fichier)  # Remove local file after upload
+
 
 def change_dossier(ftp, path):
     try:
@@ -29,6 +43,22 @@ def change_dossier(ftp, path):
     except Exception as e:
         log_action(f"Error changing directory to {path}: {e}")
         print(f"Erreur lors du changement de dossier : {e}")
+
+def del_dossier(ftp, dossier):
+    try:
+        ftp.rmd(dossier)
+        log_action(f"Deleted directory: {dossier} on FTP.")
+    except Exception as e:
+        log_action(f"Error deleting directory {dossier}: {e}")
+        print(f"Erreur lors de la suppression du dossier : {e}")
+
+def del_file(ftp, fichier):
+    try:
+        ftp.delete(fichier)
+        log_action(f"Deleted file: {fichier} on FTP.")
+    except Exception as e:
+        log_action(f"Error deleting file {fichier}: {e}")
+        print(f"Erreur lors de la suppression du fichier : {e}")
 
 def list_files(ftp):
     try:

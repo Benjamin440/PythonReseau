@@ -1,4 +1,3 @@
-import file_manager
 import ftp_manager
 import menu_scanner
 from logger import log_action
@@ -32,7 +31,7 @@ def menu_super_admin_ftp():
         print("4. Ajouter des dossiers ou fichiers")
         print("5. Créer des dossiers ou fichiers")
         print("6. Copier des dossiers ou fichiers")
-        print("7.Déplacer des dossiers ou fichiers")
+        print("7. Déplacer des dossiers ou fichiers")
         print("8. Supprimer des dossiers ou fichiers")
         print("9.Quitter")
         choice = input("Entrez votre choix: ")
@@ -70,15 +69,39 @@ def menu_super_admin_ftp():
             print("2. Créer un fichier")
             choice = input("Entrez votre choix: ")
             if choice == "1":
+                fichier = input("Nom du dossier à créer : ")
+                if not fichier.strip():
+                    print(" Le nom du dossier ne peut pas être vide.")
+                    continue
                 ftp_manager.add_dossier(ftp, fichier)
+                print(f" Dossier '{fichier}' créé avec succès.")
             elif choice == "2":
+                fichier = input("Nom du fichier à créer : ")
+                if not fichier.strip():
+                    print(" Le nom du fichier ne peut pas être vide.")
+                    continue
                 ftp_manager.add_file(ftp, fichier)
+                print(f" Fichier '{fichier}' créé avec succès.")
         elif choice == "6":
             ftp_manager.copy_item(ftp, fichier)
         elif choice == "7":
             ftp_manager.change_dossier(ftp, fichier)
         elif choice == "8":
-            ftp_manager.delete_item(ftp, fichier)
+            print("1. Supprimer un dossier")
+            print("2. Supprimer un fichier")
+            choice = input("Entrez votre choix: ")
+            if choice == "1":
+                fichier = input("Nom du dossier à supprimer : ")
+                if not fichier.strip():
+                    print(" Le nom du dossier ne peut pas être vide.")
+                    continue
+                ftp_manager.del_dossier(ftp, fichier)
+            elif choice == "2":
+                fichier = input("Nom du fichier à supprimer avec extension : ")
+                if not fichier.strip():
+                    print(" Le nom du fichier ne peut pas être vide.")
+                    continue
+                ftp_manager.del_file(ftp, fichier)
         elif choice == "9":
             print("Au revoir")
             ftp.quit()

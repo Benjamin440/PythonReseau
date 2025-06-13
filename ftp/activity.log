@@ -18,3 +18,29 @@
 2025-06-13 12:51:38,721 - INFO - Changed directory to: Paris on FTP.
 2025-06-13 12:51:47,572 - INFO - Changed directory to: Commun on FTP.
 2025-06-13 12:51:53,172 - INFO - Revenu au dossier parent : /Paris
+2025-06-13 13:19:11,210 - INFO - Connexionn reussi avec l'FTP 127.0.0.1:21 en tant que admin
+2025-06-13 13:19:25,041 - INFO - Created directory: Strasbourg on FTP.
+2025-06-13 13:19:25,041 - INFO - Dossier 'Strasbourg' créé avec succès.
+2025-06-13 13:23:56,184 - INFO - Connexionn reussi avec l'FTP 127.0.0.1:21 en tant que admin
+2025-06-13 13:24:00,507 - INFO - Changed directory to: Paris on FTP.
+2025-06-13 13:24:24,515 - INFO - Connexionn reussi avec l'FTP 127.0.0.1:21 en tant que admin
+2025-06-13 13:24:26,984 - INFO - Changed directory to: Paris on FTP.
+2025-06-13 13:24:35,603 - INFO - Error uploading file Test: [Errno 2] No such file or directory: 'Test'
+2025-06-13 13:26:50,430 - INFO - Renamed Commun to Test on FTP.
+2025-06-13 13:27:13,266 - INFO - Renamed Test to Commun on FTP.
+2025-06-13 13:29:45,865 - INFO - Deleted directory: Test on FTP.
+2025-06-13 13:30:27,004 - INFO - Connexionn reussi avec l'FTP 127.0.0.1:21 en tant que admin
+2025-06-13 13:30:33,205 - INFO - Changed directory to: Paris on FTP.
+2025-06-13 13:31:02,504 - INFO - Deleted directory: Test on FTP.
+2025-06-13 13:31:17,760 - INFO - Error deleting file test: 550 Couldn't open the file
+2025-06-13 13:32:17,579 - INFO - Error deleting file test: 550 Couldn't open the file
+2025-06-13 13:32:31,398 - INFO - Deleted file: test.txt on FTP.
+2025-06-13 13:32:51,984 - INFO - Error uploading file test.txt: [Errno 2] No such file or directory: 'test.txt'
+2025-06-13 13:35:26,147 - INFO - Connexionn reussi avec l'FTP 127.0.0.1:21 en tant que admin
+2025-06-13 13:35:29,506 - INFO - Changed directory to: Paris on FTP.
+2025-06-13 13:35:41,972 - INFO - Uploaded file: Test.txt to FTP.
+2025-06-13 13:37:30,969 - INFO - Connexionn reussi avec l'FTP 127.0.0.1:21 en tant que admin
+2025-06-13 13:37:37,131 - INFO - Error uploading file Patate: [Errno 2] No such file or directory: 'Patate'
+2025-06-13 13:37:50,821 - INFO - Error uploading file Patate.txt: [Errno 2] No such file or directory: 'Patate.txt'
+2025-06-13 13:40:37,311 - INFO - Connexionn reussi avec l'FTP 127.0.0.1:21 en tant que admin
+2025-06-13 13:40:46,235 - INFO - Uploaded file: Chiant.txt to FTP.
