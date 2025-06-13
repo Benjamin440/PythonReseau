@@ -1,19 +1,23 @@
 import ftp_manager
 import menu_scanner
+import menu_scan_reseau
 from logger import log_action
 
 def menu_general():
         print("--- Menu Général ---")
-        print("1. Scan réseau et scan de port")
-        print("2. Gérer les fichiers FTP")
-        print("3. Quitter")
+        print("1. Scan de port")
+        print("2. Scan réseau")
+        print("3. Gérer les fichiers FTP")
+        print("4. Quitter")
         choice = input("Entrez votre choix: ")
         
         if choice == "1":
             menu_scanner.scan()
         elif choice == "2":
-            menu_super_admin_ftp()
+            menu_scan_reseau.scan()
         elif choice == "3":
+            menu_super_admin_ftp()
+        elif choice == "4":
             print("Au revoir")
         else:
             print("Choix invalide, veuillez réessayer.")
@@ -119,7 +123,9 @@ def menu_super_admin_ftp():
                 ftp_manager.add_file(ftp, fichier)
                 print(f" Fichier '{fichier}' créé avec succès.")
         elif choice == "6":
-            ftp_manager.copy_item(ftp, fichier)
+            source = input("Entrez le chemin du fichier ou dossier source : ")
+            destination = input("Entrez le chemin de destination : ")
+            ftp_manager.copy_folder(ftp, source, destination)
         elif choice == "7":
             print(f"\nRépertoire courant : {ftp.pwd()}")
             source_path = input("Entrez le chemin du fichier ou dossier à déplacer : ")
