@@ -28,7 +28,7 @@ def menu_super_admin_ftp():
         print("1. Lister les dossier")## Naviguer dans les dossiers
         print("2. Se déplacer dans un dossier")##Gérer les chemins des dossiers
         print("3. Renommer des dossier ou fichiers")
-        print("4. Ajouter des dossiers ou fichiers")
+        print("4. Upload ou Download des dossiers ou fichiers")
         print("5. Créer des dossiers ou fichiers")
         print("6. Copier des dossiers ou fichiers")
         print("7. Déplacer des dossiers ou fichiers")
@@ -40,21 +40,43 @@ def menu_super_admin_ftp():
             print(f"\nRépertoire courant : {ftp.pwd()}")
             ftp_manager.list_dossier(ftp)
         elif choice == "2":
-            ftp_manager.list_dossier(ftp)
-            print(f"\nRépertoire courant : {ftp.pwd()}")
-            dossier = input("Nom du dossier à ouvrir (ou '..' pour revenir en arrière) : ")
-            if dossier.strip():
-                if dossier.strip() == "..":
+            while True:
+                ftp_manager.list_dossier(ftp)
+                print(f"\nRépertoire courant : {ftp.pwd()}")
+                print("\nEntrez le nom du dossier à ouvrir :")
+                print("Tapez '..' pour revenir au dossier parent")
+                print("Tapez '/' pour revenir à la racine")
+                print("Tapez 'menu' pour revenir au menu principal")
+                
+
+                dossier = input("Nom du dossier : ").strip()
+
+                if dossier == "menu":
+                    break  # sortir de la boucle interne et revenir au menu principal
+                elif dossier == "..":
                     try:
                         ftp.cwd("..")
-                        print(f" Revenu au dossier parent : {ftp.pwd()}")
-                        log_action(f"Revenu au dossier parent : {ftp.pwd()}")
+                        print(f"Retour au dossier parent : {ftp.pwd()}")
+                        log_action(f"Retour au dossier parent : {ftp.pwd()}")
                     except Exception as e:
                         print(f"Impossible de revenir en arrière : {e}")
                         log_action(f"Erreur lors du retour en arrière : {e}")
+                elif dossier == "/":
+                    try:
+                        ftp.cwd("/")
+                        print(f"Retour à la racine : {ftp.pwd()}")
+                        log_action(f"Retour à la racine : {ftp.pwd()}")
+                    except Exception as e:
+                        print(f"Impossible d'aller à la racine : {e}")
+                        log_action(f"Erreur retour racine : {e}")
+                elif dossier:
+                    try:
+                        ftp_manager.change_dossier(ftp, dossier)
+                        print(f"Changement de dossier réussi : {ftp.pwd()}")
+                    except Exception as e:
+                        print(f"Erreur de navigation : {e}")
                 else:
-                    ftp_manager.change_dossier(ftp, dossier.strip())
-                    print(f" Changement de dossier réussi : {ftp.pwd()}")
+                    print("⚠ Veuillez entrer un nom de dossier valide.")
         elif choice == "3":
             old = input("Nom actuel : ")
             new = input("Nouveau nom : ")
@@ -63,12 +85,26 @@ def menu_super_admin_ftp():
             else:
                 print(" Les deux noms doivent être renseignés.")
         elif choice == "4":
-            ftp_manager.add_file(ftp, fichier)
+            print("1. Upload un fichier ou dossier")
+            print("2. Download un fichier ou dossier")
+            choice = input("Entrez votre choix: ")
+            if choice == "1":
+                print(f"\nRépertoire courant : {ftp.pwd()}")
+                local_path = input("Entrez le chemin local du fichier à ajouter : ")
+                remote_file_name = input("Entrez le nom du fichier distant : ")
+                remote_path = input("Entrez le chemin distant (laisser vide pour le répertoire courant) : ")
+                ftp_manager.upload_file(ftp, local_path, remote_file_name, remote_path)
+            elif choice == "2":
+                print(f"\nRépertoire courant : {ftp.pwd()}")
+                local_path = input("Entrez le chemin local où télécharger le fichier : ")
+                remote_file_name = input("Entrez le nom du fichier distant à télécharger : ")
+                ftp_manager.download_file(ftp, local_path, remote_file_name)
         elif choice == "5":
             print("1. Créer un dossier")
             print("2. Créer un fichier")
             choice = input("Entrez votre choix: ")
             if choice == "1":
+                print(f"\nRépertoire courant : {ftp.pwd()}")
                 fichier = input("Nom du dossier à créer : ")
                 if not fichier.strip():
                     print(" Le nom du dossier ne peut pas être vide.")
@@ -85,7 +121,13 @@ def menu_super_admin_ftp():
         elif choice == "6":
             ftp_manager.copy_item(ftp, fichier)
         elif choice == "7":
-            ftp_manager.change_dossier(ftp, fichier)
+            print(f"\nRépertoire courant : {ftp.pwd()}")
+            source_path = input("Entrez le chemin du fichier ou dossier à déplacer : ")
+            destination_path = input("Entrez le chemin de destination : ")
+            if not source_path.strip() or not destination_path.strip():
+                print(" Les chemins source et destination ne peuvent pas être vides.")
+                continue
+            ftp_manager.move_file(ftp, source_path, destination_path)
         elif choice == "8":
             print("1. Supprimer un dossier")
             print("2. Supprimer un fichier")

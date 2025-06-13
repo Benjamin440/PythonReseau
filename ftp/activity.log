@@ -44,3 +44,41 @@
 2025-06-13 13:37:50,821 - INFO - Error uploading file Patate.txt: [Errno 2] No such file or directory: 'Patate.txt'
 2025-06-13 13:40:37,311 - INFO - Connexionn reussi avec l'FTP 127.0.0.1:21 en tant que admin
 2025-06-13 13:40:46,235 - INFO - Uploaded file: Chiant.txt to FTP.
+2025-06-13 13:43:06,998 - INFO - Connexionn reussi avec l'FTP 127.0.0.1:21 en tant que admin
+2025-06-13 13:43:18,433 - INFO - Error renaming Chiant to Relou: 550 Unknown error
+2025-06-13 13:43:41,172 - INFO - Renamed Chiant.txt to Relou.txt on FTP.
+2025-06-13 13:54:30,169 - INFO - Connexionn reussi avec l'FTP 127.0.0.1:21 en tant que admin
+2025-06-13 13:54:43,960 - INFO - Changed directory to: Paris on FTP.
+2025-06-13 13:54:51,899 - INFO - Changed directory to: Commun on FTP.
+2025-06-13 13:54:55,308 - INFO - Revenu au dossier parent : /Paris
+2025-06-13 13:55:13,877 - INFO - Uploaded file: Toto.txt to FTP.
+2025-06-13 13:56:45,961 - INFO - Deleted file: Toto.txt on FTP.
+2025-06-13 14:36:24,549 - INFO - Connexionn reussi avec l'FTP 127.0.0.1:21 en tant que admin
+2025-06-13 14:37:08,513 - INFO - Erreur upload de C:\Users\aodre\Downloads : [Errno 13] Permission denied: 'C:\\Users\\aodre\\Downloads'
+2025-06-13 14:38:45,230 - INFO - Uploaded C:\Users\aodre\Downloads\SyllabusDockerFinal.pdf to SyllabusDockerFinal on FTP.
+2025-06-13 14:39:23,055 - INFO - Uploaded C:\Users\aodre\Downloads\SyllabusDockerFinal.pdf to Paris/Commun/DockerFinal on FTP.
+2025-06-13 14:44:10,898 - INFO - Connexionn reussi avec l'FTP 127.0.0.1:21 en tant que admin
+2025-06-13 14:44:22,511 - INFO - Changed directory to: Paris on FTP.
+2025-06-13 14:45:04,402 - INFO - Erreur téléchargement de Test.txt : [Errno 2] No such file or directory: 'C:\\Users\\aodre\\Downloads\\SyllabusDockerFinal.pdf\\Test.txt'
+2025-06-13 14:45:34,455 - INFO - Téléchargé Test.txt vers C:\Users\aodre\Downloads\Test.txt depuis FTP.
+2025-06-13 14:52:02,200 - INFO - Connexionn reussi avec l'FTP 127.0.0.1:21 en tant que admin
+2025-06-13 14:52:27,209 - INFO - Connexionn reussi avec l'FTP 127.0.0.1:21 en tant que admin
+2025-06-13 14:52:30,088 - INFO - Changed directory to: Paris on FTP.
+2025-06-13 14:53:21,460 - INFO - Erreur déplacement /Paris/test.txt \u2192 /Grenoble : FTP.rename() takes 3 positional arguments but 4 were given
+2025-06-13 14:54:25,663 - INFO - Erreur déplacement /Paris/test.txt \u2192 Grenoble/test.txt : FTP.rename() takes 3 positional arguments but 4 were given
+2025-06-13 14:55:08,212 - INFO - Connexionn reussi avec l'FTP 127.0.0.1:21 en tant que admin
+2025-06-13 14:55:23,881 - INFO - Déplacé : Paris/Test.txt \u2192 Grenoble/test.txt
+2025-06-13 15:05:48,820 - INFO - Connexionn reussi avec l'FTP 127.0.0.1:21 en tant que admin
+2025-06-13 15:05:59,853 - INFO - Changed directory to: Paris on FTP.
+2025-06-13 15:06:19,273 - INFO - Connexionn reussi avec l'FTP 127.0.0.1:21 en tant que admin
+2025-06-13 15:06:26,285 - INFO - Changed directory to: Paris on FTP.
+2025-06-13 15:06:32,695 - INFO - Changed directory to: Commun on FTP.
+2025-06-13 15:06:34,827 - INFO - Retour au dossier parent : /Paris
+2025-06-13 15:06:36,091 - INFO - Retour au dossier parent : /
+2025-06-13 15:06:37,729 - INFO - Changed directory to: Paris on FTP.
+2025-06-13 15:06:40,381 - INFO - Changed directory to: Commun on FTP.
+2025-06-13 15:06:41,712 - INFO - Retour à la racine : /
+2025-06-13 15:06:44,604 - INFO - Changed directory to: Paris on FTP.
+2025-06-13 15:07:25,728 - INFO - Connexionn reussi avec l'FTP 127.0.0.1:21 en tant que admin
+2025-06-13 15:07:31,145 - INFO - Changed directory to: Paris on FTP.
+2025-06-13 15:11:11,114 - INFO - Uploaded file: Tutu.txt to FTP.

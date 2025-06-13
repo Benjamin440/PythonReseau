@@ -97,3 +97,73 @@ def upload_audit_backup(local_file, region, client):
     remote_path = f"{remote_dir}/{filename}"
     upload_file(ftp, local_file, remote_path)
     ftp.quit()
+
+def upload_file(ftp, local_file, remote_file_name=None, remote_path=""):
+    try:
+        if not remote_file_name:
+            remote_file_name = os.path.basename(local_file)
+        remote_full_path = f"{remote_path}/{remote_file_name}".strip("/")
+        with open(local_file, 'rb') as f:
+            ftp.storbinary(f"STOR {remote_full_path}", f)
+        log_action(f"Uploaded {local_file} to {remote_full_path} on FTP.")
+        print(f"Fichier envoyé : {local_file} → {remote_full_path}")
+    except Exception as e:
+        print(f"Erreur lors de l'upload : {e}")
+        log_action(f"Erreur upload de {local_file} : {e}")
+
+def download_file(ftp, local_path, remote_file_name):
+    try:
+        if not os.path.exists(local_path):
+            os.makedirs(local_path)
+        local_full_path = os.path.join(local_path, remote_file_name)
+        with open(local_full_path, 'wb') as f:
+            ftp.retrbinary(f"RETR {remote_file_name}", f.write)
+        log_action(f"Téléchargé {remote_file_name} vers {local_full_path} depuis FTP.")
+        print(f"Fichier téléchargé : {remote_file_name} → {local_full_path}")
+    except Exception as e:
+        print(f"Erreur lors du téléchargement : {e}")
+        log_action(f"Erreur téléchargement de {remote_file_name} : {e}")
+
+def move_file(ftp, source_path, destination_path):
+    try:
+        ftp.rename(source_path, destination_path)
+        log_action(f"Déplacé : {source_path} → {destination_path}")
+        print(f"Fichier déplacé de {source_path} vers {destination_path}")
+    except Exception as e:
+        print(f"Erreur lors du déplacement : {e}")
+        log_action(f"Erreur déplacement {source_path} → {destination_path} : {e}")
+
+import os
+
+def move_directory(ftp, src_path, dest_path):
+    try:
+        # Étape 1 : créer le dossier de destination
+        try:
+            ftp.mkd(dest_path)
+        except Exception:
+            pass  # Le dossier existe déjà
+        # Étape 2 : naviguer dans le dossier source
+        ftp.cwd(src_path)
+        items = ftp.nlst()
+        for item in items:
+            # Vérifie si c’est un fichier ou un dossier (très basique)
+            try:
+                ftp.cwd(item)  # si on peut entrer, c’est un dossier
+                ftp.cwd('..')  # revenir en arrière
+                move_directory(ftp, f"{src_path}/{item}", f"{dest_path}/{item}")  # appel récursif
+                ftp.rmd(f"{src_path}/{item}")  # suppression du dossier vide
+            except Exception:
+                # C’est un fichier
+                with open("temp_file", "wb") as f:
+                    ftp.retrbinary(f"RETR {src_path}/{item}", f.write)
+                with open("temp_file", "rb") as f:
+                    ftp.storbinary(f"STOR {dest_path}/{item}", f)
+                ftp.delete(f"{src_path}/{item}")
+
+        ftp.cwd('..')  # revenir avant suppression
+        ftp.rmd(src_path)
+        print(f"Dossier déplacé de {src_path} vers {dest_path}")
+    except Exception as e:
+        print(f"Erreur lors du déplacement : {e}")
+
+
