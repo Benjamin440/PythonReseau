@@ -32,7 +32,7 @@ def menu_super_admin_ftp():
         print("4. Ajouter des dossiers ou fichiers")
         print("5. Créer des dossiers ou fichiers")
         print("6. Copier des dossiers ou fichiers")
-        print("7.Déplacer des dossiers ou fichiers")
+        print("7. Déplacer des dossiers ou fichiers")
         print("8. Supprimer des dossiers ou fichiers")
         print("9.Quitter")
         choice = input("Entrez votre choix: ")
@@ -74,7 +74,9 @@ def menu_super_admin_ftp():
             elif choice == "2":
                 ftp_manager.add_file(ftp, fichier)
         elif choice == "6":
-            ftp_manager.copy_item(ftp, fichier)
+            source = input("Chemin du dossier ou fichier source : ")
+            destination = input("Chemin du dossier ou fichier de destination : ")
+            ftp_manager.copy_folder(ftp, source, destination)
         elif choice == "7":
             ftp_manager.change_dossier(ftp, fichier)
         elif choice == "8":
