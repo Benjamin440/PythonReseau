@@ -1,5 +1,5 @@
 FTP_HOST = "127.0.0.1"
-FTP_PORT = 14148
+FTP_PORT = 21
 FTP_USER = "admin"
 FTP_PASS = "Respons11!"
 

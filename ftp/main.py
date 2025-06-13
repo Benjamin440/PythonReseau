@@ -2,10 +2,14 @@ import os
 from config import ROOT_DIR, REGIONS
 import file_manager as fm
 import ftp_manager as ftp
+import menu_ftp as menu
 from logger import setup_logger
 
 def main():
     setup_logger()
+
+    menu.menu_super_admin_ftp()
+
 
     print("=== Gestion Automatisée du SGF ===")
     # Exemple d'opérations automatiques
@@ -19,6 +23,7 @@ def main():
                 if f.startswith("audit."):
                     local_file = os.path.join(client_path, f)
                     ftp.upload_audit_backup(local_file, region, client)
+
 
 if __name__ == "__main__":
     main()
