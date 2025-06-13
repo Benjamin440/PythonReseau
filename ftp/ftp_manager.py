@@ -1,23 +1,43 @@
 from ftplib import FTP
 from config import FTP_HOST, FTP_PORT, FTP_USER, FTP_PASS
-from logger import log_action
-from logger import setup_logger
+from logger import log_action, setup_logger
 
-    
 def connect_ftp():
-    setup_logger()
+    setup_logger()  # Ensure logger is set up
     ftp = FTP()
     ftp.connect(FTP_HOST, FTP_PORT)
     ftp.login(FTP_USER, FTP_PASS)
     log_action(f"Connexionn reussi avec l'FTP {FTP_HOST}:{FTP_PORT} en tant que {FTP_USER}")
-    print("✅ Connected to FTP server.")
     return ftp
 
 def list_dossier(ftp):
-    print("📁 Contenu du répertoire distant :")
+    print("Contenu du répertoire distant :")
     ftp.dir()
 
-    
+def add_dossier(ftp, path):
+    try:
+        ftp.mkd(path)
+        log_action(f"Created directory: {path} on FTP.")
+    except Exception as e:
+        log_action(f"Error creating directory {path}: {e}")
+        print(f"Erreur lors de la création du dossier : {e}")
+
+def change_dossier(ftp, path):
+    try:
+        ftp.cwd(path)
+        log_action(f"Changed directory to: {path} on FTP.")
+    except Exception as e:
+        log_action(f"Error changing directory to {path}: {e}")
+        print(f"Erreur lors du changement de dossier : {e}")
+
+def list_files(ftp):
+    try:
+        files = ftp.nlst()
+        log_action("Listed files in current directory on FTP.")
+        return files
+    except Exception as e:
+        log_action(f"Error listing files: {e}")
+        return []
 
 def rename_ftp(ftp, old_name, new_name):
     try:
@@ -47,6 +67,3 @@ def upload_audit_backup(local_file, region, client):
     remote_path = f"{remote_dir}/{filename}"
     upload_file(ftp, local_file, remote_path)
     ftp.quit()
-
-
-connect_ftp()  # Ensure connection is established for the module
