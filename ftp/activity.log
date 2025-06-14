@@ -7,3 +7,14 @@
 2025-06-14 14:36:17,673 - INFO - Erreur déplacement /Rennes/Commun \u2192 /Grenoble/Commun : 550 Unknown error
 2025-06-14 14:51:24,495 - INFO - Connexionn reussi avec l'FTP 127.0.0.1:21 en tant que admin
 2025-06-14 14:51:52,943 - INFO - Connexionn reussi avec l'FTP 127.0.0.1:21 en tant que admin_grenoble
+2025-06-14 14:56:31,805 - INFO - Connexionn reussi avec l'FTP 127.0.0.1:21 en tant que admin_grenoble
+2025-06-14 14:57:03,041 - INFO - Created directory: dossier on FTP.
+2025-06-14 14:59:10,970 - INFO - Connexionn reussi avec l'FTP 127.0.0.1:21 en tant que admin
+2025-06-14 15:01:19,340 - INFO - Connexionn reussi avec l'FTP 127.0.0.1:21 en tant que admin_grenoble
+2025-06-14 15:01:43,296 - INFO - Created directory: test on FTP.
+2025-06-14 15:22:10,052 - INFO - Connexionn reussi avec l'FTP 127.0.0.1:21 en tant que admin
+2025-06-14 15:22:10,054 - INFO - Error listing <ftplib.FTP object at 0x000001C89F6ABE30>: listdir: path should be string, bytes, os.PathLike or None, not FTP
+2025-06-14 15:22:10,055 - INFO - Error listing C:/New_Tech/Rennes\Paris: [WinError 3] Le chemin d’accès spécifié est introuvable: 'C:/New_Tech/Rennes\\Paris'
+2025-06-14 15:22:10,055 - INFO - Error listing C:/New_Tech/Rennes\Marseille: [WinError 3] Le chemin d’accès spécifié est introuvable: 'C:/New_Tech/Rennes\\Marseille'
+2025-06-14 15:22:10,055 - INFO - Error listing C:/New_Tech/Rennes\Rennes: [WinError 3] Le chemin d’accès spécifié est introuvable: 'C:/New_Tech/Rennes\\Rennes'
+2025-06-14 15:22:10,055 - INFO - Error listing C:/New_Tech/Rennes\Grenoble: [WinError 3] Le chemin d’accès spécifié est introuvable: 'C:/New_Tech/Rennes\\Grenoble'
