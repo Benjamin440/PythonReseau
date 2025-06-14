@@ -75,7 +75,7 @@ def is_directory(ftp, name):
         ftp.cwd(name)
         ftp.cwd(current)
         return True
-    except error_perm:
+    except Exception:
         return False
 
 def copy_folder(ftp, source, destination):
@@ -86,7 +86,7 @@ def copy_folder(ftp, source, destination):
     try:
         ftp.mkd(target_dir)
         log_action(f"Dossier créé : {target_dir}")
-    except error_perm as e:
+    except Exception as e:
         log_action(f"Dossier {target_dir} existant ou erreur : {e}")
 
     # Accéder au dossier source
