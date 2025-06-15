@@ -85,7 +85,7 @@ def copy_folder(ftp, source, destination):
     # Créer le dossier destination
     try:
         ftp.mkd(target_dir)
-        log_action(f"Dossier créé : {target_dir}")
+        log_action(f"Dossier cree : {target_dir}")
     except Exception as e:
         log_action(f"Dossier {target_dir} existant ou erreur : {e}")
 
@@ -100,7 +100,7 @@ def copy_folder(ftp, source, destination):
     for item in items:
         # Vérifier si c'est un dossier
         if is_directory(ftp, item):
-            log_action(f"Ignoré (dossier) : {item}")
+            log_action(f"Ignore (dossier) : {item}")
             continue
 
         # Télécharger même les fichiers vides
@@ -117,7 +117,7 @@ def copy_folder(ftp, source, destination):
             ftp.cwd(target_dir)
             with open(temp_path, "rb") as f:
                 ftp.storbinary(f"STOR {item}", f)
-            log_action(f"Copié : {item} → {target_dir}")
+            log_action(f"Copie : {item} → {target_dir}")
         except Exception as e:
             log_action(f"Erreur STOR {item} → {target_dir} : {e}")
         finally:
@@ -177,20 +177,20 @@ def download_file(ftp, local_path, remote_file_name):
         local_full_path = os.path.join(local_path, remote_file_name)
         with open(local_full_path, 'wb') as f:
             ftp.retrbinary(f"RETR {remote_file_name}", f.write)
-        log_action(f"Téléchargé {remote_file_name} vers {local_full_path} depuis FTP.")
+        log_action(f"Telecharge {remote_file_name} vers {local_full_path} depuis FTP.")
         print(f"Fichier téléchargé : {remote_file_name} → {local_full_path}")
     except Exception as e:
         print(f"Erreur lors du téléchargement : {e}")
-        log_action(f"Erreur téléchargement de {remote_file_name} : {e}")
+        log_action(f"Erreur telechargement de {remote_file_name} : {e}")
 
 def move_file(ftp, source_path, destination_path):
     try:
         ftp.rename(source_path, destination_path)
-        log_action(f"Déplacé : {source_path} → {destination_path}")
+        log_action(f"Deplace : {source_path} → {destination_path}")
         print(f"Fichier déplacé de {source_path} vers {destination_path}")
     except Exception as e:
         print(f"Erreur lors du déplacement : {e}")
-        log_action(f"Erreur déplacement {source_path} → {destination_path} : {e}")
+        log_action(f"Erreur deplacement {source_path} → {destination_path} : {e}")
 
 import os
 

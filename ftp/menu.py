@@ -39,19 +39,19 @@ def menu_super_admin():
 
 def menu_admin():
     setup_logger()  # Initialiser le logger
-    log_action("Démarrage du menu Admin")
+    log_action("Demarrage du menu Admin")
     while True:
-        log_action("Accès au menu général")
+        log_action("Acces au menu general")
         print("--- Menu Admin ---")
         print("1. Gérer les fichiers FTP")
         print("2. Gérer les fichiers locaux")
         print("3. Quitter")
         choice = input("Entrez votre choix: ")
         if choice == "1":
-            log_action("Accès au menu FTP")
+            log_action("Acces au menu FTP")
             menu_ftp.menu_ftp()
         elif choice == "2":
-            log_action("Accès au menu OS")
+            log_action("Acces au menu OS")
             menu_os.menu_os()
         elif choice == "3":
             log_action("Sortie du programme")

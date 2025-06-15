@@ -42,7 +42,7 @@ def menu_ftp():
                         log_action(f"Retour au dossier parent : {ftp.pwd()}")
                     except Exception as e:
                         print(f"Impossible de revenir en arrière : {e}")
-                        log_action(f"Erreur lors du retour en arrière : {e}")
+                        log_action(f"Erreur lors du retour en arriere : {e}")
                 elif dossier == "/":
                     try:
                         ftp.cwd("/")
