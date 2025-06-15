@@ -1,6 +1,7 @@
 import os
 import shutil
 from logger import log_action
+
 def list_directory(path):
     try:
         dirs = os.listdir(path)
@@ -65,3 +66,12 @@ def delete_item(path):
         log_action(f"Deleted {path}")
     except Exception as e:
         log_action(f"Error deleting {path}: {e}")
+
+def get_current_directory():
+    try:
+        current_dir = os.getcwd()
+        log_action(f"Current directory: {current_dir}")
+        return current_dir
+    except Exception as e:
+        log_action(f"Error getting current directory: {e}")
+        return None

@@ -1,11 +1,13 @@
 import ftp_manager
 from logger import log_action
 
+CHOICE_PROMPT = "Entrez votre choix: "
+
 def menu_ftp():
     ftp = ftp_manager.connect_ftp()
 
     while True:
-        print("--- Menu Super Admin ---")
+        print("--- Menu FTP ---")
         print("1. Lister les dossier")## Naviguer dans les dossiers
         print("2. Se déplacer dans un dossier")##Gérer les chemins des dossiers
         print("3. Renommer des dossier ou fichiers")
@@ -14,12 +16,12 @@ def menu_ftp():
         print("6. Copier des dossiers ou fichiers")
         print("7. Déplacer des dossiers ou fichiers")
         print("8. Supprimer des dossiers ou fichiers")
-        print("9.Quitter")
-        choice = input("Entrez votre choix: ")
+        print("9. Quitter")
+        choice = input(CHOICE_PROMPT).strip()
         if choice == "1":
             ## Lister les dossiers
             print(f"\nRépertoire courant : {ftp.pwd()}")
-            ftp_manager.list_dossier(ftp)
+            not ftp_manager.list_dossier(ftp)
         elif choice == "2":
             while True:
                 ftp_manager.list_dossier(ftp)
@@ -67,7 +69,7 @@ def menu_ftp():
         elif choice == "4":
             print("1. Upload un fichier ou dossier")
             print("2. Download un fichier ou dossier")
-            choice = input("Entrez votre choix: ")
+            choice = input(CHOICE_PROMPT).strip()
             if choice == "1":
                 print(f"\nRépertoire courant : {ftp.pwd()}")
                 local_path = input("Entrez le chemin local du fichier à ajouter : ")
@@ -82,7 +84,7 @@ def menu_ftp():
         elif choice == "5":
             print("1. Créer un dossier")
             print("2. Créer un fichier")
-            choice = input("Entrez votre choix: ")
+            choice = input(CHOICE_PROMPT).strip()
             if choice == "1":
                 print(f"\nRépertoire courant : {ftp.pwd()}")
                 fichier = input("Nom du dossier à créer : ")
@@ -113,7 +115,7 @@ def menu_ftp():
         elif choice == "8":
             print("1. Supprimer un dossier")
             print("2. Supprimer un fichier")
-            choice = input("Entrez votre choix: ")
+            choice = input(CHOICE_PROMPT).strip()
             if choice == "1":
                 fichier = input("Nom du dossier à supprimer : ")
                 if not fichier.strip():

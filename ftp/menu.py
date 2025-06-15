@@ -3,9 +3,11 @@ import menu_os
 import menu_scanner
 import menu_scan_reseau
 
-from logger import log_action
+from logger import log_action, setup_logger
 
 def menu_super_admin():
+    setup_logger()  # Initialiser le logger
+    log_action("Démarrage du menu Super Admin")
     while True:
         log_action("Accès au menu général")
         print("--- Menu Super Admin ---")
@@ -15,7 +17,6 @@ def menu_super_admin():
         print("4. Gérer les fichiers locaux")
         print("5. Quitter")
         choice = input("Entrez votre choix: ")
-        
         if choice == "1":
             log_action("Lancement du scan de port")
             menu_scanner.scan()
@@ -37,6 +38,8 @@ def menu_super_admin():
             menu_super_admin()
 
 def menu_admin():
+    setup_logger()  # Initialiser le logger
+    log_action("Démarrage du menu Admin")
     while True:
         log_action("Accès au menu général")
         print("--- Menu Admin ---")
@@ -53,6 +56,7 @@ def menu_admin():
         elif choice == "3":
             log_action("Sortie du programme")
             print("Au revoir")
+            break
         else:
             print("Choix invalide, veuillez réessayer.")
             menu_admin()

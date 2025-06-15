@@ -18,3 +18,50 @@
 2025-06-14 15:22:10,055 - INFO - Error listing C:/New_Tech/Rennes\Marseille: [WinError 3] Le chemin d’accès spécifié est introuvable: 'C:/New_Tech/Rennes\\Marseille'
 2025-06-14 15:22:10,055 - INFO - Error listing C:/New_Tech/Rennes\Rennes: [WinError 3] Le chemin d’accès spécifié est introuvable: 'C:/New_Tech/Rennes\\Rennes'
 2025-06-14 15:22:10,055 - INFO - Error listing C:/New_Tech/Rennes\Grenoble: [WinError 3] Le chemin d’accès spécifié est introuvable: 'C:/New_Tech/Rennes\\Grenoble'
+2025-06-15 15:02:38,055 - INFO - Démarrage du programme de gestion SGF
+2025-06-15 15:02:38,055 - INFO - Démarrage du menu Admin
+2025-06-15 15:02:38,055 - INFO - Accès au menu général
+2025-06-15 15:02:40,695 - INFO - Accès au menu FTP
+2025-06-15 15:03:31,749 - INFO - Démarrage du programme de gestion SGF
+2025-06-15 15:03:31,749 - INFO - Démarrage du menu Admin
+2025-06-15 15:03:31,750 - INFO - Accès au menu général
+2025-06-15 15:03:33,080 - INFO - Accès au menu FTP
+2025-06-15 15:04:12,015 - INFO - Démarrage du programme de gestion SGF
+2025-06-15 15:04:12,017 - INFO - Démarrage du menu Admin
+2025-06-15 15:04:12,017 - INFO - Accès au menu général
+2025-06-15 15:04:13,513 - INFO - Accès au menu FTP
+2025-06-15 15:04:13,549 - INFO - Connexionn reussi avec l'FTP 127.0.0.1:21 en tant que admin_rennes
+2025-06-15 15:04:23,481 - INFO - Accès au menu général
+2025-06-15 15:04:26,180 - INFO - Sortie du programme
+2025-06-15 15:04:36,806 - INFO - Démarrage du programme de gestion SGF
+2025-06-15 15:04:36,806 - INFO - Démarrage du menu Admin
+2025-06-15 15:04:36,806 - INFO - Accès au menu général
+2025-06-15 15:04:38,096 - INFO - Accès au menu FTP
+2025-06-15 15:05:49,894 - INFO - Démarrage du programme de gestion SGF
+2025-06-15 15:05:49,894 - INFO - Démarrage du menu Admin
+2025-06-15 15:05:49,894 - INFO - Accès au menu général
+2025-06-15 15:05:51,134 - INFO - Accès au menu FTP
+2025-06-15 15:05:51,163 - INFO - Connexionn reussi avec l'FTP 127.0.0.1:21 en tant que admin_marseille
+2025-06-15 15:05:55,395 - INFO - Accès au menu général
+2025-06-15 15:05:56,435 - INFO - Sortie du programme
+2025-06-15 15:06:07,877 - INFO - Démarrage du programme de gestion SGF
+2025-06-15 15:06:07,877 - INFO - Démarrage du menu Admin
+2025-06-15 15:06:07,877 - INFO - Accès au menu général
+2025-06-15 15:06:09,261 - INFO - Accès au menu FTP
+2025-06-15 15:06:09,290 - INFO - Connexionn reussi avec l'FTP 127.0.0.1:21 en tant que admin_grenoble
+2025-06-15 15:06:20,066 - INFO - Accès au menu général
+2025-06-15 15:06:21,698 - INFO - Sortie du programme
+2025-06-15 15:06:49,352 - INFO - Démarrage du programme de gestion SGF
+2025-06-15 15:06:49,352 - INFO - Démarrage du menu Admin
+2025-06-15 15:06:49,352 - INFO - Accès au menu général
+2025-06-15 15:06:50,975 - INFO - Accès au menu FTP
+2025-06-15 15:06:51,015 - INFO - Connexionn reussi avec l'FTP 127.0.0.1:21 en tant que admin_grenoble
+2025-06-15 15:07:34,720 - INFO - Accès au menu général
+2025-06-15 15:07:38,159 - INFO - Sortie du programme
+2025-06-15 15:07:47,737 - INFO - Démarrage du programme de gestion SGF
+2025-06-15 15:07:47,737 - INFO - Démarrage du menu Admin
+2025-06-15 15:07:47,737 - INFO - Accès au menu général
+2025-06-15 15:07:48,925 - INFO - Accès au menu FTP
+2025-06-15 15:07:48,964 - INFO - Connexionn reussi avec l'FTP 127.0.0.1:21 en tant que admin_grenoble
+2025-06-15 15:09:09,544 - INFO - Accès au menu général
+2025-06-15 15:09:10,712 - INFO - Sortie du programme
