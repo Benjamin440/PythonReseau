@@ -1,12 +1,12 @@
 import os
 from config import ROOT_DIR, REGIONS
-import menu_ftp
+import menu
 import os_manager as fm
 import ftp_manager as ftp
 
 def main():
-    
-    menu_ftp.menu_general()
+
+    menu.menu_super_admin()
 
 
 
