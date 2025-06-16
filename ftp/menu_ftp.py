@@ -101,9 +101,30 @@ def menu_ftp():
                 ftp_manager.add_file(ftp, fichier)
                 print(f" Fichier '{fichier}' créé avec succès.")
         elif choice == "6":
-            source = input("Entrez le chemin du fichier ou dossier source : ")
-            destination = input("Entrez le chemin de destination : ")
-            ftp_manager.copy_folder(ftp, source, destination)
+            print("1. Copier un dossier")
+            print("2. Copier un fichier")
+            print("3. Quitter")
+            choice = input(CHOICE_PROMPT).strip()
+            if choice == "1":
+                print(f"\nRépertoire courant : {ftp.pwd()}")
+                source = input("Entrez le chemin du dossier source : ")
+                destination = input("Entrez le chemin de destination : ")
+                if not source.strip() or not destination.strip():
+                    print(" Les chemins source et destination ne peuvent pas être vides.")
+                    continue
+                ftp_manager.copy_folder(ftp, source, destination)
+            elif choice == "2":
+                print(f"\nRépertoire courant : {ftp.pwd()}")
+                source = input("Entrez le chemin du fichier source : ")
+                destination = input("Entrez le chemin de destination : ")
+                if not source.strip() or not destination.strip():
+                    print(" Les chemins source et destination ne peuvent pas être vides.")
+                    continue
+                ftp_manager.copy_file(ftp, source, destination)
+            elif choice == "3":
+                print("Retour au menu principal")
+                log_action("Retour au menu principal")
+                break
         elif choice == "7":
             print(f"\nRépertoire courant : {ftp.pwd()}")
             source_path = input("Entrez le chemin du fichier ou dossier à déplacer : ")

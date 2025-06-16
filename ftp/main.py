@@ -1,12 +1,23 @@
 import os
 from config import ROOT_DIR, REGIONS, FTP_USER, FTP_PASS
-from logger import log_action, setup_logger
+from logger import log_action, setup_logger, setup_logger_grenoble, setup_logger_marseille, setup_logger_rennes
 import menu
 
 def main():
-    setup_logger()  # Initialiser le logger
-    log_action("Démarrage du programme de gestion SGF")
-    print("=== Système de Gestion des Fichiers (SGF) ===")
+    if FTP_USER == "admin_grenoble":
+        setup_logger_grenoble()
+        log_action("Initialisation du logger pour Grenoble")
+    elif FTP_USER == "admin_marseille":
+        setup_logger_marseille()
+        log_action("Initialisation du logger pour Marseille")
+    elif FTP_USER == "admin_rennes":
+        setup_logger_rennes()
+        log_action("Initialisation du logger pour Rennes")
+    else:
+        setup_logger()
+        log_action("Initialisation du logger pour l'utilisateur standard")
+    log_action("Demarrage du programme de gestion SGF")
+    print("=== Systeme de Gestion des Fichiers (SGF) ===")
     if FTP_USER == "admin":
         print("Bienvenue, Super Admin!")
         menu.menu_super_admin()

@@ -1,67 +1,52 @@
-2025-06-14 13:57:52,575 - INFO - Connexionn reussi avec l'FTP 127.0.0.1:21 en tant que admin
-2025-06-14 14:13:10,761 - INFO - Connexionn reussi avec l'FTP 127.0.0.1:21 en tant que admin
-2025-06-14 14:16:38,642 - INFO - Connexionn reussi avec l'FTP 127.0.0.1:21 en tant que admin
-2025-06-14 14:16:47,545 - INFO - Created directory: test2 on FTP.
-2025-06-14 14:33:30,451 - INFO - Connexionn reussi avec l'FTP 127.0.0.1:21 en tant que admin_grenoble
-2025-06-14 14:35:15,286 - INFO - Created directory: Tech on FTP.
-2025-06-14 14:36:17,673 - INFO - Erreur déplacement /Rennes/Commun \u2192 /Grenoble/Commun : 550 Unknown error
-2025-06-14 14:51:24,495 - INFO - Connexionn reussi avec l'FTP 127.0.0.1:21 en tant que admin
-2025-06-14 14:51:52,943 - INFO - Connexionn reussi avec l'FTP 127.0.0.1:21 en tant que admin_grenoble
-2025-06-14 14:56:31,805 - INFO - Connexionn reussi avec l'FTP 127.0.0.1:21 en tant que admin_grenoble
-2025-06-14 14:57:03,041 - INFO - Created directory: dossier on FTP.
-2025-06-14 14:59:10,970 - INFO - Connexionn reussi avec l'FTP 127.0.0.1:21 en tant que admin
-2025-06-14 15:01:19,340 - INFO - Connexionn reussi avec l'FTP 127.0.0.1:21 en tant que admin_grenoble
-2025-06-14 15:01:43,296 - INFO - Created directory: test on FTP.
-2025-06-14 15:22:10,052 - INFO - Connexionn reussi avec l'FTP 127.0.0.1:21 en tant que admin
-2025-06-14 15:22:10,054 - INFO - Error listing <ftplib.FTP object at 0x000001C89F6ABE30>: listdir: path should be string, bytes, os.PathLike or None, not FTP
-2025-06-14 15:22:10,055 - INFO - Error listing C:/New_Tech/Rennes\Paris: [WinError 3] Le chemin d’accès spécifié est introuvable: 'C:/New_Tech/Rennes\\Paris'
-2025-06-14 15:22:10,055 - INFO - Error listing C:/New_Tech/Rennes\Marseille: [WinError 3] Le chemin d’accès spécifié est introuvable: 'C:/New_Tech/Rennes\\Marseille'
-2025-06-14 15:22:10,055 - INFO - Error listing C:/New_Tech/Rennes\Rennes: [WinError 3] Le chemin d’accès spécifié est introuvable: 'C:/New_Tech/Rennes\\Rennes'
-2025-06-14 15:22:10,055 - INFO - Error listing C:/New_Tech/Rennes\Grenoble: [WinError 3] Le chemin d’accès spécifié est introuvable: 'C:/New_Tech/Rennes\\Grenoble'
-2025-06-15 15:02:38,055 - INFO - Démarrage du programme de gestion SGF
-2025-06-15 15:02:38,055 - INFO - Démarrage du menu Admin
-2025-06-15 15:02:38,055 - INFO - Accès au menu général
-2025-06-15 15:02:40,695 - INFO - Accès au menu FTP
-2025-06-15 15:03:31,749 - INFO - Démarrage du programme de gestion SGF
-2025-06-15 15:03:31,749 - INFO - Démarrage du menu Admin
-2025-06-15 15:03:31,750 - INFO - Accès au menu général
-2025-06-15 15:03:33,080 - INFO - Accès au menu FTP
-2025-06-15 15:04:12,015 - INFO - Démarrage du programme de gestion SGF
-2025-06-15 15:04:12,017 - INFO - Démarrage du menu Admin
-2025-06-15 15:04:12,017 - INFO - Accès au menu général
-2025-06-15 15:04:13,513 - INFO - Accès au menu FTP
-2025-06-15 15:04:13,549 - INFO - Connexionn reussi avec l'FTP 127.0.0.1:21 en tant que admin_rennes
-2025-06-15 15:04:23,481 - INFO - Accès au menu général
-2025-06-15 15:04:26,180 - INFO - Sortie du programme
-2025-06-15 15:04:36,806 - INFO - Démarrage du programme de gestion SGF
-2025-06-15 15:04:36,806 - INFO - Démarrage du menu Admin
-2025-06-15 15:04:36,806 - INFO - Accès au menu général
-2025-06-15 15:04:38,096 - INFO - Accès au menu FTP
-2025-06-15 15:05:49,894 - INFO - Démarrage du programme de gestion SGF
-2025-06-15 15:05:49,894 - INFO - Démarrage du menu Admin
-2025-06-15 15:05:49,894 - INFO - Accès au menu général
-2025-06-15 15:05:51,134 - INFO - Accès au menu FTP
-2025-06-15 15:05:51,163 - INFO - Connexionn reussi avec l'FTP 127.0.0.1:21 en tant que admin_marseille
-2025-06-15 15:05:55,395 - INFO - Accès au menu général
-2025-06-15 15:05:56,435 - INFO - Sortie du programme
-2025-06-15 15:06:07,877 - INFO - Démarrage du programme de gestion SGF
-2025-06-15 15:06:07,877 - INFO - Démarrage du menu Admin
-2025-06-15 15:06:07,877 - INFO - Accès au menu général
-2025-06-15 15:06:09,261 - INFO - Accès au menu FTP
-2025-06-15 15:06:09,290 - INFO - Connexionn reussi avec l'FTP 127.0.0.1:21 en tant que admin_grenoble
-2025-06-15 15:06:20,066 - INFO - Accès au menu général
-2025-06-15 15:06:21,698 - INFO - Sortie du programme
-2025-06-15 15:06:49,352 - INFO - Démarrage du programme de gestion SGF
-2025-06-15 15:06:49,352 - INFO - Démarrage du menu Admin
-2025-06-15 15:06:49,352 - INFO - Accès au menu général
-2025-06-15 15:06:50,975 - INFO - Accès au menu FTP
-2025-06-15 15:06:51,015 - INFO - Connexionn reussi avec l'FTP 127.0.0.1:21 en tant que admin_grenoble
-2025-06-15 15:07:34,720 - INFO - Accès au menu général
-2025-06-15 15:07:38,159 - INFO - Sortie du programme
-2025-06-15 15:07:47,737 - INFO - Démarrage du programme de gestion SGF
-2025-06-15 15:07:47,737 - INFO - Démarrage du menu Admin
-2025-06-15 15:07:47,737 - INFO - Accès au menu général
-2025-06-15 15:07:48,925 - INFO - Accès au menu FTP
-2025-06-15 15:07:48,964 - INFO - Connexionn reussi avec l'FTP 127.0.0.1:21 en tant que admin_grenoble
-2025-06-15 15:09:09,544 - INFO - Accès au menu général
-2025-06-15 15:09:10,712 - INFO - Sortie du programme
+2025-06-16 21:26:21,685 - INFO - Initialisation du logger pour l'utilisateur standard
+2025-06-16 21:26:21,685 - INFO - Demarrage du programme de gestion SGF
+2025-06-16 21:26:21,685 - INFO - Demarrage du menu Super Admin
+2025-06-16 21:26:21,685 - INFO - Acces au menu general
+2025-06-16 21:26:25,241 - INFO - Acces au menu FTP
+2025-06-16 21:26:25,290 - INFO - Connexionn reussi avec l'FTP 127.0.0.1:21 en tant que admin
+2025-06-16 21:26:53,508 - INFO - Error deleting file SyllabusDockerFinal.pdf: 550 Couldn't open the file
+2025-06-16 21:27:53,448 - INFO - Deleted file: SyllabusDockerFinal on FTP.
+2025-06-16 21:28:00,871 - INFO - Acces au menu general
+2025-06-16 21:28:03,161 - INFO - Affichage des logs d'activité
+2025-06-16 21:30:03,006 - INFO - Initialisation du logger pour l'utilisateur standard
+2025-06-16 21:30:03,006 - INFO - Demarrage du programme de gestion SGF
+2025-06-16 21:30:03,006 - INFO - Demarrage du menu Super Admin
+2025-06-16 21:30:03,006 - INFO - Acces au menu general
+2025-06-16 21:30:05,128 - INFO - Affichage des logs d'activite
+2025-06-16 21:30:05,153 - INFO - Acces au menu general
+2025-06-16 21:30:40,377 - INFO - Sortie du programme
+2025-06-16 21:37:16,114 - INFO - Initialisation du logger pour l'utilisateur standard
+2025-06-16 21:37:16,115 - INFO - Demarrage du programme de gestion SGF
+2025-06-16 21:37:16,115 - INFO - Demarrage du menu Super Admin
+2025-06-16 21:37:16,115 - INFO - Acces au menu general
+2025-06-16 21:37:19,665 - INFO - Acces au menu des logs
+2025-06-16 21:37:22,308 - INFO - Affichage des logs d'activité pour Grenoble
+2025-06-16 21:37:30,942 - INFO - Retour au menu principal
+2025-06-16 21:37:30,943 - INFO - Acces au menu general
+2025-06-16 21:43:52,232 - INFO - Lancement du scan reseau
+2025-06-16 21:43:54,267 - INFO - Acces au menu general
+2025-06-16 21:43:56,731 - INFO - Acces au menu FTP
+2025-06-16 21:44:07,295 - INFO - Initialisation du logger pour l'utilisateur standard
+2025-06-16 21:44:07,295 - INFO - Demarrage du programme de gestion SGF
+2025-06-16 21:44:07,295 - INFO - Demarrage du menu Super Admin
+2025-06-16 21:44:07,295 - INFO - Acces au menu general
+2025-06-16 21:44:09,836 - INFO - Acces au menu FTP
+2025-06-16 21:44:09,895 - INFO - Connexionn reussi avec l'FTP 127.0.0.1:21 en tant que admin
+2025-06-16 21:49:19,552 - INFO - Initialisation du logger pour l'utilisateur standard
+2025-06-16 21:49:19,552 - INFO - Demarrage du programme de gestion SGF
+2025-06-16 21:49:19,552 - INFO - Demarrage du menu Super Admin
+2025-06-16 21:49:19,552 - INFO - Acces au menu general
+2025-06-16 21:49:22,247 - INFO - Acces au menu FTP
+2025-06-16 21:49:22,303 - INFO - Connexionn reussi avec l'FTP 127.0.0.1:21 en tant que admin
+2025-06-16 21:50:31,587 - INFO - Initialisation du logger pour l'utilisateur standard
+2025-06-16 21:50:31,587 - INFO - Demarrage du programme de gestion SGF
+2025-06-16 21:50:31,587 - INFO - Demarrage du menu Super Admin
+2025-06-16 21:50:31,587 - INFO - Acces au menu general
+2025-06-16 21:50:31,935 - INFO - Demarrage du menu Super Admin
+2025-06-16 21:50:31,935 - INFO - Acces au menu general
+2025-06-16 21:50:35,284 - INFO - Acces au menu FTP
+2025-06-16 21:50:35,339 - INFO - Connexionn reussi avec l'FTP 127.0.0.1:21 en tant que admin
+2025-06-16 21:52:02,872 - INFO - Acces au menu general
+2025-06-16 21:52:04,888 - INFO - Sortie du programme
+2025-06-16 21:52:04,888 - INFO - Acces au menu general
+2025-06-16 21:52:08,868 - INFO - Sortie du programme

@@ -2,34 +2,38 @@ import menu_ftp
 import menu_os
 import menu_scanner
 import menu_scan_reseau
-
-from logger import log_action, setup_logger
+import menu_log
+from logger import log_action
+from config import FTP_USER
 
 def menu_super_admin():
-    setup_logger()  # Initialiser le logger
-    log_action("Démarrage du menu Super Admin")
+    log_action("Demarrage du menu Super Admin")
     while True:
-        log_action("Accès au menu général")
+        log_action("Acces au menu general")
         print("--- Menu Super Admin ---")
         print("1. Scan de port")
         print("2. Scan réseau")
         print("3. Gérer les fichiers FTP")
         print("4. Gérer les fichiers locaux")
-        print("5. Quitter")
+        print("5. Afficher les logs d'activité")
+        print("6. Quitter")
         choice = input("Entrez votre choix: ")
         if choice == "1":
             log_action("Lancement du scan de port")
             menu_scanner.scan()
         elif choice == "2":
-            log_action("Lancement du scan réseau")
+            log_action("Lancement du scan reseau")
             menu_scan_reseau.scan()
         elif choice == "3":
-            log_action("Accès au menu FTP")
+            log_action("Acces au menu FTP")
             menu_ftp.menu_ftp()
         elif choice == "4":
-            log_action("Accès au menu OS")
+            log_action("Acces au menu OS")
             menu_os.menu_os()
         elif choice == "5":
+            log_action("Acces au menu des logs")
+            menu_log.menu_log_Sadmin()
+        elif choice == "6":
             log_action("Sortie du programme")
             print("Au revoir")
             break
@@ -38,14 +42,14 @@ def menu_super_admin():
             menu_super_admin()
 
 def menu_admin():
-    setup_logger()  # Initialiser le logger
     log_action("Demarrage du menu Admin")
     while True:
         log_action("Acces au menu general")
         print("--- Menu Admin ---")
         print("1. Gérer les fichiers FTP")
         print("2. Gérer les fichiers locaux")
-        print("3. Quitter")
+        print("3. Afficher les logs d'activité")
+        print("4. Quitter")
         choice = input("Entrez votre choix: ")
         if choice == "1":
             log_action("Acces au menu FTP")
@@ -54,8 +58,15 @@ def menu_admin():
             log_action("Acces au menu OS")
             menu_os.menu_os()
         elif choice == "3":
-            log_action("Sortie du programme")
-            print("Au revoir")
+            if FTP_USER == "admin_grenoble":
+                log_action("Acces au menu des logs pour Grenoble")
+                menu_log.menu_log_grenoble()
+            elif FTP_USER == "admin_marseille":
+                log_action("Acces au menu des logs pour Marseille")
+                menu_log.menu_log_marseille()
+            elif FTP_USER == "admin_rennes":
+                log_action("Acces au menu des logs pour Rennes")
+                menu_log.menu_log_rennes()
             break
         else:
             print("Choix invalide, veuillez réessayer.")

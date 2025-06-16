@@ -16,7 +16,7 @@ def menu_os():
     if choice == "1":
         os_manager.list_directory(path=os_manager.get_current_directory())
     elif choice == "2":
-        os_manager.add_directory(input("Nom du dossier à créer : "))
+        os_manager.add_directory(input("Nom du dossier à crécer : "))
     elif choice == "3":
         os_manager.add_file(input("Nom du fichier à créer : "))
     elif choice == "4":

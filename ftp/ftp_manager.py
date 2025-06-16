@@ -192,8 +192,6 @@ def move_file(ftp, source_path, destination_path):
         print(f"Erreur lors du déplacement : {e}")
         log_action(f"Erreur deplacement {source_path} → {destination_path} : {e}")
 
-import os
-
 def move_directory(ftp, src_path, dest_path):
     try:
         # Étape 1 : créer le dossier de destination
@@ -225,4 +223,18 @@ def move_directory(ftp, src_path, dest_path):
     except Exception as e:
         print(f"Erreur lors du déplacement : {e}")
 
+def copy_file(ftp, chemin_source, chemin_destination):
+    import io
 
+    try:
+        # 1. Télécharger le fichier source en mémoire
+        buffer = io.BytesIO()
+        ftp.retrbinary(f"RETR {chemin_source}", buffer.write)
+        buffer.seek(0)  # Revenir au début du buffer
+
+        # 2. Envoyer le fichier au nouvel emplacement
+        ftp.storbinary(f"STOR {chemin_destination}", buffer)
+
+        print(f"Copie de {chemin_source} vers {chemin_destination} réussie.")
+    except Exception as e:
+        print(f"Erreur lors de la copie : {e}")

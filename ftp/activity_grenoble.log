@@ -1,0 +1,8 @@
+2025-06-16 20:32:52,444 - INFO - Initialisation du logger pour Grenoble
+2025-06-16 20:32:52,444 - INFO - Démarrage du programme de gestion SGF
+2025-06-16 20:32:52,444 - INFO - Demarrage du menu Admin
+2025-06-16 20:32:52,444 - INFO - Acces au menu general
+2025-06-16 20:33:00,011 - INFO - Acces au menu FTP
+2025-06-16 20:33:00,065 - INFO - Connexionn reussi avec l'FTP 127.0.0.1:21 en tant que admin_grenoble
+2025-06-16 20:33:07,918 - INFO - Acces au menu general
+2025-06-16 20:33:10,740 - INFO - Sortie du programme

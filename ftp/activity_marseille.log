@@ -1,0 +1,9 @@
+2025-06-16 21:18:16,230 - INFO - Initialisation du logger pour Marseille
+2025-06-16 21:18:16,232 - INFO - Démarrage du programme de gestion SGF
+2025-06-16 21:18:16,232 - INFO - Demarrage du menu Admin
+2025-06-16 21:18:16,232 - INFO - Acces au menu general
+2025-06-16 21:18:22,692 - INFO - Acces au menu FTP
+2025-06-16 21:18:22,815 - INFO - Connexionn reussi avec l'FTP 127.0.0.1:21 en tant que admin_marseille
+2025-06-16 21:18:38,677 - INFO - Uploaded file: Jesaispas to FTP.
+2025-06-16 21:19:24,306 - INFO - Acces au menu general
+2025-06-16 21:19:25,750 - INFO - Sortie du programme
