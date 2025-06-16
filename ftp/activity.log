@@ -50,3 +50,89 @@
 2025-06-16 21:52:04,888 - INFO - Sortie du programme
 2025-06-16 21:52:04,888 - INFO - Acces au menu general
 2025-06-16 21:52:08,868 - INFO - Sortie du programme
+2025-06-17 00:23:37,252 - INFO - Initialisation du logger pour l'utilisateur standard
+2025-06-17 00:23:37,252 - INFO - Demarrage du programme de gestion SGF
+2025-06-17 00:23:37,252 - INFO - Demarrage du menu Super Admin
+2025-06-17 00:23:37,252 - INFO - Acces au menu general
+2025-06-17 00:23:40,264 - INFO - Acces au menu OS
+2025-06-17 00:23:40,264 - INFO - Current directory: C:\Quentin\git\Projet Python FTP\PythonReseau\ftp
+2025-06-17 00:23:57,502 - INFO - Current directory: C:\Quentin\git\Projet Python FTP\PythonReseau\ftp
+2025-06-17 00:23:57,502 - INFO - Listed directory: C:\Quentin\git\Projet Python FTP\PythonReseau\ftp
+2025-06-17 00:23:57,518 - INFO - Current directory: C:\Quentin\git\Projet Python FTP\PythonReseau\ftp
+2025-06-17 00:24:06,072 - INFO - Acces au menu general
+2025-06-17 00:24:13,939 - INFO - Sortie du programme
+2025-06-17 00:25:58,246 - INFO - Initialisation du logger pour l'utilisateur standard
+2025-06-17 00:25:58,246 - INFO - Demarrage du programme de gestion SGF
+2025-06-17 00:25:58,246 - INFO - Demarrage du menu Super Admin
+2025-06-17 00:25:58,246 - INFO - Acces au menu general
+2025-06-17 00:26:00,671 - INFO - Acces au menu OS
+2025-06-17 00:26:00,671 - INFO - Changed directory to: C:/New_Tech
+2025-06-17 00:26:02,608 - INFO - Changed directory to: C:/New_Tech
+2025-06-17 00:26:02,608 - INFO - Listed directory: None
+2025-06-17 00:26:02,608 - INFO - Changed directory to: C:/New_Tech
+2025-06-17 00:31:04,332 - INFO - Initialisation du logger pour l'utilisateur standard
+2025-06-17 00:31:04,332 - INFO - Demarrage du programme de gestion SGF
+2025-06-17 00:31:04,333 - INFO - Demarrage du menu Super Admin
+2025-06-17 00:31:04,333 - INFO - Acces au menu general
+2025-06-17 00:31:07,175 - INFO - Acces au menu OS
+2025-06-17 00:31:07,175 - INFO - Set and changed working directory to: C:\New_Tech
+2025-06-17 00:31:09,606 - INFO - Listed directory: C:\New_Tech
+2025-06-17 00:31:19,530 - INFO - Created directory: C:\New_Tech\test
+2025-06-17 00:31:39,189 - INFO - Created file: C:\New_Tech\lol
+2025-06-17 00:33:52,389 - INFO - Initialisation du logger pour l'utilisateur standard
+2025-06-17 00:33:52,389 - INFO - Demarrage du programme de gestion SGF
+2025-06-17 00:33:52,389 - INFO - Demarrage du menu Super Admin
+2025-06-17 00:33:52,389 - INFO - Acces au menu general
+2025-06-17 00:33:54,786 - INFO - Acces au menu OS
+2025-06-17 00:33:54,786 - INFO - Current directory: C:\Quentin\git\Projet Python FTP\PythonReseau\ftp
+2025-06-17 00:34:04,296 - INFO - Created directory: C:\New_Tech\test
+2025-06-17 00:34:04,296 - INFO - Current directory: C:\Quentin\git\Projet Python FTP\PythonReseau\ftp
+2025-06-17 00:35:27,768 - INFO - Initialisation du logger pour l'utilisateur standard
+2025-06-17 00:35:27,769 - INFO - Demarrage du programme de gestion SGF
+2025-06-17 00:35:27,769 - INFO - Demarrage du menu Super Admin
+2025-06-17 00:35:27,769 - INFO - Acces au menu general
+2025-06-17 00:35:29,175 - INFO - Acces au menu OS
+2025-06-17 00:35:29,175 - INFO - Current directory: C:\Quentin\git\Projet Python FTP\PythonReseau\ftp
+2025-06-17 00:35:43,457 - INFO - Current directory: C:\Quentin\git\Projet Python FTP\PythonReseau\ftp
+2025-06-17 00:35:43,457 - INFO - Listed directory: C:\Quentin\git\Projet Python FTP\PythonReseau\ftp
+2025-06-17 00:35:43,457 - INFO - Current directory: C:\Quentin\git\Projet Python FTP\PythonReseau\ftp
+2025-06-17 00:36:00,499 - INFO - Listed directory: c:/New_Tech
+2025-06-17 00:36:00,500 - INFO - Current directory: C:\Quentin\git\Projet Python FTP\PythonReseau\ftp
+2025-06-17 00:36:14,495 - INFO - Created directory: /Rennes/test
+2025-06-17 00:36:14,495 - INFO - Current directory: C:\Quentin\git\Projet Python FTP\PythonReseau\ftp
+2025-06-17 00:37:28,522 - INFO - Initialisation du logger pour l'utilisateur standard
+2025-06-17 00:37:28,522 - INFO - Demarrage du programme de gestion SGF
+2025-06-17 00:37:28,522 - INFO - Demarrage du menu Super Admin
+2025-06-17 00:37:28,522 - INFO - Acces au menu general
+2025-06-17 00:37:30,997 - INFO - Acces au menu OS
+2025-06-17 00:37:30,997 - INFO - Current directory: C:\Quentin\git\Projet Python FTP\PythonReseau\ftp
+2025-06-17 00:37:33,478 - INFO - Current directory: C:\Quentin\git\Projet Python FTP\PythonReseau\ftp
+2025-06-17 00:37:33,478 - INFO - Listed directory: C:\Quentin\git\Projet Python FTP\PythonReseau\ftp
+2025-06-17 00:37:33,478 - INFO - Current directory: C:\Quentin\git\Projet Python FTP\PythonReseau\ftp
+2025-06-17 00:40:16,172 - INFO - Current directory: C:\Quentin\git\Projet Python FTP\PythonReseau\ftp
+2025-06-17 00:40:16,172 - INFO - Listed directory: C:\Quentin\git\Projet Python FTP\PythonReseau\ftp
+2025-06-17 00:40:16,172 - INFO - Current directory: C:\Quentin\git\Projet Python FTP\PythonReseau\ftp
+2025-06-17 00:40:36,361 - INFO - Initialisation du logger pour l'utilisateur standard
+2025-06-17 00:40:36,361 - INFO - Demarrage du programme de gestion SGF
+2025-06-17 00:40:36,361 - INFO - Demarrage du menu Super Admin
+2025-06-17 00:40:36,361 - INFO - Acces au menu general
+2025-06-17 00:40:39,236 - INFO - Acces au menu OS
+2025-06-17 00:40:39,252 - INFO - Changed directory to: C:/New_Tech
+2025-06-17 00:40:39,252 - INFO - Current directory: C:\New_Tech
+2025-06-17 00:40:44,154 - INFO - Current directory: C:\New_Tech
+2025-06-17 00:40:44,154 - INFO - Listed directory: C:\New_Tech
+2025-06-17 00:40:44,168 - INFO - Current directory: C:\New_Tech
+2025-06-17 00:41:14,283 - INFO - Created directory: c:/new_tech/Rennes/test
+2025-06-17 00:41:14,284 - INFO - Current directory: C:\New_Tech
+2025-06-17 00:41:48,996 - INFO - Created file: c:/new_tech/test.txt
+2025-06-17 00:41:48,996 - INFO - Current directory: C:\New_Tech
+2025-06-17 00:42:35,576 - INFO - Deleted c:/new_tech/Grenoble/tech
+2025-06-17 00:42:35,576 - INFO - Current directory: C:\New_Tech
+2025-06-17 00:43:08,122 - INFO - Changed directory to: c:/new_tech/paris
+2025-06-17 00:43:08,122 - INFO - Current directory: c:\new_tech\paris
+2025-06-17 00:43:23,643 - INFO - Error creating directory : [WinError 3] Le chemin d’accès spécifié est introuvable: ''
+2025-06-17 00:43:23,643 - INFO - Current directory: c:\new_tech\paris
+2025-06-17 00:43:34,984 - INFO - Created directory: /tech
+2025-06-17 00:43:34,984 - INFO - Current directory: c:\new_tech\paris
+2025-06-17 00:43:58,450 - INFO - Acces au menu general
+2025-06-17 00:44:00,256 - INFO - Sortie du programme
