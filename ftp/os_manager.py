@@ -1,6 +1,10 @@
 import os
 import shutil
 from logger import log_action
+import time
+
+TRASH_DIR = r"C:/New_Tech/trash"
+RESTORE_METADATA = os.path.join(TRASH_DIR, "restore_info.txt")
 
 def list_directory(path):
     try:
@@ -74,14 +78,74 @@ def move_item(src, dest):
 
 def delete_item(path):
     try:
-        if os.path.isdir(path):
-            shutil.rmtree(path)
-        else:
-            os.remove(path)
-        log_action(f"Deleted {path}")
+        os.makedirs(TRASH_DIR, exist_ok=True)
+
+        if not os.path.exists(path):
+            print("Le chemin n'existe pas.")
+            return
+
+        # Génère un nom unique basé sur le timestamp
+        timestamp = time.strftime("%Y%m%d%H%M%S")
+        base_name = os.path.basename(path)
+        trashed_name = f"{timestamp}_{base_name}"
+        trashed_path = os.path.join(TRASH_DIR, trashed_name)
+
+        shutil.move(path, trashed_path)
+
+        # Sauvegarde le chemin original pour la restauration
+        with open(RESTORE_METADATA, "a") as f:
+            f.write(f"{trashed_path}|{path}\n")
+
+        log_action(f"Moved to trash instead of deleting: {path}")
+        print(f"{base_name} a été déplacé dans la corbeille.")
     except Exception as e:
-        log_action(f"Error deleting {path}: {e}")
+        log_action(f"Error moving {path} to trash: {e}")
         print(f"Erreur : {e}")
+
+def restore_item():
+    try:
+        if not os.path.exists(RESTORE_METADATA):
+            print("Aucune sauvegarde disponible.")
+            return
+
+        with open(RESTORE_METADATA, "r") as f:
+            entries = [line.strip() for line in f if line.strip()]
+
+        if not entries:
+            print("La corbeille est vide.")
+            return
+
+        print("\n--- Fichiers disponibles pour restauration ---")
+        for i, entry in enumerate(entries):
+            trashed_path, original_path = entry.split("|")
+            print(f"{i + 1}. {os.path.basename(trashed_path)} → {original_path}")
+
+        choice = input("Entrez le numéro du fichier à restaurer (ou rien pour annuler) : ").strip()
+        if not choice.isdigit():
+            print("Annulé.")
+            return
+
+        index = int(choice) - 1
+        if index < 0 or index >= len(entries):
+            print("Choix invalide.")
+            return
+
+        trashed_path, original_path = entries[index].split("|")
+        os.makedirs(os.path.dirname(original_path), exist_ok=True)
+        shutil.move(trashed_path, original_path)
+
+        # Supprimer l'entrée restaurée
+        with open(RESTORE_METADATA, "w") as f:
+            for i, entry in enumerate(entries):
+                if i != index:
+                    f.write(entry + "\n")
+
+        log_action(f"Restored {original_path} from trash")
+        print("Restauration effectuée.")
+    except Exception as e:
+        log_action(f"Error restoring item: {e}")
+        print(f"Erreur : {e}")
+
 
 def get_current_directory():
     try:

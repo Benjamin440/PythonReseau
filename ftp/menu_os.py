@@ -1,7 +1,9 @@
 import os_manager
 import config
+import ftp_manager
 
 def menu_os():
+
     if config.FTP_USER == "admin":
         os_manager.change_directory(r"C:/New_Tech")
     elif config.FTP_USER == "admin_grenoble":
@@ -24,6 +26,8 @@ def menu_os():
         print("7. Copier un fichier ou dossier")
         print("8. Déplacer un fichier ou dossier")
         print("9. Quitter")
+        print("10. Restaurer un élément supprimé")
+
         
         choice = input("Entrez votre choix: ").strip()
 
@@ -83,6 +87,8 @@ def menu_os():
         elif choice == "9":
             print("Au revoir")
             break
+        elif choice == "10":
+            os_manager.restore_item()
 
         else:
             print("Choix invalide, veuillez réessayer.")
