@@ -186,3 +186,38 @@
 2025-06-18 23:16:04,560 - INFO - Demarrage du programme de gestion SGF
 2025-06-18 23:16:04,560 - INFO - Demarrage du menu Super Admin
 2025-06-18 23:16:04,560 - INFO - Acces au menu general
+2025-06-18 23:21:22,065 - INFO - Initialisation du logger pour l'utilisateur standard
+2025-06-18 23:21:22,065 - INFO - Demarrage du programme de gestion SGF
+2025-06-18 23:21:22,065 - INFO - Demarrage du menu Super Admin
+2025-06-18 23:21:22,065 - INFO - Acces au menu general
+2025-06-18 23:21:24,932 - INFO - Acces au menu OS
+2025-06-18 23:21:24,932 - INFO - Changed directory to: C:/New_Tech
+2025-06-18 23:21:24,932 - INFO - Current directory: C:\New_Tech
+2025-06-18 23:22:07,185 - INFO - Renamed c:/new_Tech/rennes/commun to c:/new_tech/rennes/test
+2025-06-18 23:22:07,185 - INFO - Current directory: C:\New_Tech
+2025-06-18 23:22:53,045 - INFO - Copied c:/new_tech/rennes/test to c:/new_tech/paris/test\test
+2025-06-18 23:22:53,045 - INFO - Current directory: C:\New_Tech
+2025-06-18 23:23:47,237 - INFO - Moved c:/new_tech/rennes/test to c:/new_tech/paris\test
+2025-06-18 23:23:47,237 - INFO - Current directory: C:\New_Tech
+2025-06-18 23:24:01,782 - INFO - Acces au menu general
+2025-06-18 23:24:05,766 - INFO - Acces au menu des logs
+2025-06-18 23:24:10,098 - INFO - Affichage des logs d'activité
+2025-06-18 23:24:21,858 - INFO - Affichage des logs d'activité pour Grenoble
+2025-06-18 23:24:30,565 - INFO - Retour au menu principal
+2025-06-18 23:24:30,565 - INFO - Acces au menu general
+2025-06-18 23:29:00,262 - INFO - Acces au menu des logs
+2025-06-18 23:29:02,134 - INFO - Affichage des logs d'activité
+2025-06-18 23:29:21,144 - INFO - Affichage des logs d'activité
+2025-06-18 23:29:22,479 - INFO - Affichage des logs d'activité
+2025-06-18 23:29:38,960 - INFO - Initialisation du logger pour l'utilisateur standard
+2025-06-18 23:29:38,960 - INFO - Demarrage du programme de gestion SGF
+2025-06-18 23:29:38,961 - INFO - Demarrage du menu Super Admin
+2025-06-18 23:29:38,961 - INFO - Acces au menu general
+2025-06-18 23:29:40,956 - INFO - Acces au menu des logs
+2025-06-18 23:29:43,022 - INFO - Affichage des logs d'activité
+2025-06-18 23:30:26,113 - INFO - Initialisation du logger pour l'utilisateur standard
+2025-06-18 23:30:26,113 - INFO - Demarrage du programme de gestion SGF
+2025-06-18 23:30:26,113 - INFO - Demarrage du menu Super Admin
+2025-06-18 23:30:26,113 - INFO - Acces au menu general
+2025-06-18 23:30:28,453 - INFO - Acces au menu des logs
+2025-06-18 23:30:29,140 - INFO - Affichage des logs d'activité

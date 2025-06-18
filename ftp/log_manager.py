@@ -1,4 +1,5 @@
 
+
 def afficher_f_logs():
     """Affiche les logs d'activité."""
     try:
