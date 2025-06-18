@@ -2,9 +2,6 @@ import os
 import shutil
 import subprocess
 import sys
-from config import ROOT_DIR, REGIONS, FTP_USER, FTP_PASS
-from logger import log_action, setup_logger, setup_logger_grenoble, setup_logger_marseille, setup_logger_rennes
-import menu
 
 def clear_folder(folder_path):
     for filename in os.listdir(folder_path):
@@ -18,6 +15,7 @@ def clear_folder(folder_path):
             print(f'Erreur lors de la suppression de {file_path}: {e}')
 
 def create_scheduled_task(task_name, script_path, python_path, time="09:00"):
+    # Crée ou met à jour une tâche planifiée Windows qui exécute le script Python
     cmd = [
         "schtasks",
         "/create",
@@ -25,7 +23,7 @@ def create_scheduled_task(task_name, script_path, python_path, time="09:00"):
         "/tr", f'"{python_path}" "{script_path}"',
         "/sc", "daily",
         "/st", time,
-        "/f"
+        "/f"  # force la création même si la tâche existe déjà
     ]
     try:
         result = subprocess.run(cmd, capture_output=True, text=True)
@@ -36,40 +34,20 @@ def create_scheduled_task(task_name, script_path, python_path, time="09:00"):
     except Exception as e:
         print(f"Exception lors de la création de la tâche : {e}")
 
-def main():
-    # 1. Vider le dossier tmp
+if __name__ == "__main__":
     folder_to_clear = r"C:\New_Tech\tmp"
     clear_folder(folder_to_clear)
 
-    # 2. Créer ou mettre à jour la tâche planifiée
+    # Chemin absolu du script actuel
     current_script = os.path.abspath(sys.argv[0])
+
+    # Chemin vers l'exécutable Python (à adapter si besoin)
     python_executable = sys.executable
+
+    # Nom de la tâche planifiée
     task_name = "ClearTmpFolder"
+
+    # Heure d'exécution (format HH:mm)
     execution_time = "09:00"
+
     create_scheduled_task(task_name, current_script, python_executable, execution_time)
-
-    if FTP_USER == "admin_grenoble":
-        setup_logger_grenoble()
-        log_action("Initialisation du logger pour Grenoble")
-    elif FTP_USER == "admin_marseille":
-        setup_logger_marseille()
-        log_action("Initialisation du logger pour Marseille")
-    elif FTP_USER == "admin_rennes":
-        setup_logger_rennes()
-        log_action("Initialisation du logger pour Rennes")
-    else:
-        setup_logger()
-        log_action("Initialisation du logger pour l'utilisateur standard")
-
-    log_action("Demarrage du programme de gestion SGF")
-    print("=== Systeme de Gestion des Fichiers (SGF) ===")
-
-    if FTP_USER == "admin":
-        print("Bienvenue, Super Admin!")
-        menu.menu_super_admin()
-    else:
-        menu.menu_admin()
-
-
-if __name__ == "__main__":
-    main()

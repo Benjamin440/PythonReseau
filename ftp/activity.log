@@ -136,3 +136,53 @@
 2025-06-17 00:43:34,984 - INFO - Current directory: c:\new_tech\paris
 2025-06-17 00:43:58,450 - INFO - Acces au menu general
 2025-06-17 00:44:00,256 - INFO - Sortie du programme
+2025-06-18 22:29:02,644 - INFO - Initialisation du logger pour l'utilisateur standard
+2025-06-18 22:29:02,644 - INFO - Demarrage du programme de gestion SGF
+2025-06-18 22:29:02,644 - INFO - Demarrage du menu Super Admin
+2025-06-18 22:29:02,644 - INFO - Acces au menu general
+2025-06-18 22:29:07,632 - INFO - Acces au menu OS
+2025-06-18 22:29:07,632 - INFO - Changed directory to: C:/New_Tech
+2025-06-18 22:29:07,632 - INFO - Current directory: C:\New_Tech
+2025-06-18 22:35:16,832 - INFO - Initialisation du logger pour l'utilisateur standard
+2025-06-18 22:35:16,832 - INFO - Demarrage du programme de gestion SGF
+2025-06-18 22:35:16,832 - INFO - Demarrage du menu Super Admin
+2025-06-18 22:35:16,832 - INFO - Acces au menu general
+2025-06-18 22:35:20,157 - INFO - Acces au menu OS
+2025-06-18 22:35:20,157 - INFO - Changed directory to: C:/New_Tech
+2025-06-18 22:35:20,157 - INFO - Current directory: C:\New_Tech
+2025-06-18 22:35:26,273 - INFO - Created directory: c:/New_Tech/test
+2025-06-18 22:35:26,273 - INFO - Current directory: C:\New_Tech
+2025-06-18 22:36:05,094 - INFO - Created directory: c:/New_Tech/lol
+2025-06-18 22:36:05,094 - INFO - Current directory: C:\New_Tech
+2025-06-18 23:01:01,100 - INFO - Initialisation du logger pour l'utilisateur standard
+2025-06-18 23:01:01,100 - INFO - Demarrage du programme de gestion SGF
+2025-06-18 23:01:01,100 - INFO - Demarrage du menu Super Admin
+2025-06-18 23:01:01,100 - INFO - Acces au menu general
+2025-06-18 23:01:06,261 - INFO - Acces au menu OS
+2025-06-18 23:01:06,282 - INFO - Changed directory to: C:/New_Tech
+2025-06-18 23:01:06,282 - INFO - Current directory: C:\New_Tech
+2025-06-18 23:03:41,154 - INFO - Initialisation du logger pour l'utilisateur standard
+2025-06-18 23:03:41,154 - INFO - Demarrage du programme de gestion SGF
+2025-06-18 23:03:41,154 - INFO - Demarrage du menu Super Admin
+2025-06-18 23:03:41,154 - INFO - Acces au menu general
+2025-06-18 23:03:43,422 - INFO - Acces au menu OS
+2025-06-18 23:03:43,451 - INFO - Changed directory to: C:/New_Tech
+2025-06-18 23:03:43,452 - INFO - Current directory: C:\New_Tech
+2025-06-18 23:06:14,377 - INFO - Initialisation du logger pour l'utilisateur standard
+2025-06-18 23:06:14,377 - INFO - Demarrage du programme de gestion SGF
+2025-06-18 23:06:14,378 - INFO - Demarrage du menu Super Admin
+2025-06-18 23:06:14,378 - INFO - Acces au menu general
+2025-06-18 23:06:16,680 - INFO - Acces au menu OS
+2025-06-18 23:06:16,703 - INFO - Changed directory to: C:/New_Tech
+2025-06-18 23:06:16,703 - INFO - Current directory: C:\New_Tech
+2025-06-18 23:07:56,796 - INFO - Initialisation du logger pour l'utilisateur standard
+2025-06-18 23:07:56,796 - INFO - Demarrage du programme de gestion SGF
+2025-06-18 23:07:56,797 - INFO - Demarrage du menu Super Admin
+2025-06-18 23:07:56,797 - INFO - Acces au menu general
+2025-06-18 23:07:58,509 - INFO - Acces au menu OS
+2025-06-18 23:07:58,536 - INFO - Changed directory to: C:/New_Tech
+2025-06-18 23:07:58,537 - INFO - Current directory: C:\New_Tech
+2025-06-18 23:16:04,560 - INFO - Initialisation du logger pour l'utilisateur standard
+2025-06-18 23:16:04,560 - INFO - Demarrage du programme de gestion SGF
+2025-06-18 23:16:04,560 - INFO - Demarrage du menu Super Admin
+2025-06-18 23:16:04,560 - INFO - Acces au menu general

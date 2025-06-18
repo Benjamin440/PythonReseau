@@ -6,3 +6,50 @@
 2025-06-16 20:33:00,065 - INFO - Connexionn reussi avec l'FTP 127.0.0.1:21 en tant que admin_grenoble
 2025-06-16 20:33:07,918 - INFO - Acces au menu general
 2025-06-16 20:33:10,740 - INFO - Sortie du programme
+2025-06-18 22:31:37,366 - INFO - Initialisation du logger pour Grenoble
+2025-06-18 22:31:37,366 - INFO - Demarrage du programme de gestion SGF
+2025-06-18 22:31:37,367 - INFO - Demarrage du menu Admin
+2025-06-18 22:31:37,367 - INFO - Acces au menu general
+2025-06-18 22:31:47,526 - INFO - Acces au menu OS
+2025-06-18 22:31:47,526 - INFO - Changed directory to: C:/New_Tech/Grenoble
+2025-06-18 22:31:47,526 - INFO - Current directory: C:\New_Tech\Grenoble
+2025-06-18 22:36:40,517 - INFO - Initialisation du logger pour Grenoble
+2025-06-18 22:36:40,517 - INFO - Demarrage du programme de gestion SGF
+2025-06-18 22:36:40,517 - INFO - Demarrage du menu Admin
+2025-06-18 22:36:40,517 - INFO - Acces au menu general
+2025-06-18 22:36:45,423 - INFO - Acces au menu OS
+2025-06-18 22:36:45,423 - INFO - Changed directory to: C:/New_Tech/Grenoble
+2025-06-18 22:36:45,423 - INFO - Current directory: C:\New_Tech\Grenoble
+2025-06-18 22:36:53,134 - INFO - Created directory: c:/New_Tech/akel
+2025-06-18 22:36:53,134 - INFO - Current directory: C:\New_Tech\Grenoble
+2025-06-18 22:38:21,879 - INFO - Initialisation du logger pour Grenoble
+2025-06-18 22:38:21,879 - INFO - Demarrage du programme de gestion SGF
+2025-06-18 22:38:21,879 - INFO - Demarrage du menu Admin
+2025-06-18 22:38:21,879 - INFO - Acces au menu general
+2025-06-18 22:38:24,400 - INFO - Acces au menu OS
+2025-06-18 22:38:24,400 - INFO - Changed directory to: C:/New_Tech/Grenoble
+2025-06-18 22:38:24,400 - INFO - Current directory: C:\New_Tech\Grenoble
+2025-06-18 22:38:33,381 - INFO - Created directory: c:/New_Tech/Grenoble/rh
+2025-06-18 22:38:33,381 - INFO - Current directory: C:\New_Tech\Grenoble
+2025-06-18 22:44:58,386 - INFO - Initialisation du logger pour Grenoble
+2025-06-18 22:44:58,386 - INFO - Demarrage du programme de gestion SGF
+2025-06-18 22:44:58,386 - INFO - Demarrage du menu Admin
+2025-06-18 22:44:58,386 - INFO - Acces au menu general
+2025-06-18 22:45:00,479 - INFO - Acces au menu OS
+2025-06-18 22:45:00,479 - INFO - Changed directory to: C:/New_Tech/Grenoble
+2025-06-18 22:45:00,479 - INFO - Current directory: C:\New_Tech\Grenoble
+2025-06-18 22:45:13,720 - INFO - Error creating file test: [WinError 3] Le chemin d’accès spécifié est introuvable: ''
+2025-06-18 22:45:13,720 - INFO - Current directory: C:\New_Tech\Grenoble
+2025-06-18 22:47:21,714 - INFO - Initialisation du logger pour Grenoble
+2025-06-18 22:47:21,714 - INFO - Demarrage du programme de gestion SGF
+2025-06-18 22:47:21,714 - INFO - Demarrage du menu Admin
+2025-06-18 22:47:21,714 - INFO - Acces au menu general
+2025-06-18 22:47:23,892 - INFO - Acces au menu OS
+2025-06-18 22:47:23,892 - INFO - Changed directory to: C:/New_Tech/Grenoble
+2025-06-18 22:47:23,892 - INFO - Current directory: C:\New_Tech\Grenoble
+2025-06-18 22:47:36,622 - INFO - Current directory: C:\New_Tech\Grenoble
+2025-06-18 22:47:57,429 - INFO - Current directory: C:\New_Tech\Grenoble
+2025-06-18 22:48:36,570 - INFO - Current directory: C:\New_Tech\Grenoble
+2025-06-18 22:49:58,612 - INFO - Current directory: C:\New_Tech\Grenoble
+2025-06-18 22:50:28,936 - INFO - Error creating file lol.txt: [WinError 3] Le chemin d’accès spécifié est introuvable: ''
+2025-06-18 22:50:28,936 - INFO - Current directory: C:\New_Tech\Grenoble

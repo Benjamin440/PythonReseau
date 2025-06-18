@@ -1,7 +1,16 @@
 import os_manager
+import config
 
 def menu_os():
-    os_manager.change_directory(r"C:/New_Tech")  
+    if config.FTP_USER == "admin":
+        os_manager.change_directory(r"C:/New_Tech")
+    elif config.FTP_USER == "admin_grenoble":
+        os_manager.change_directory(r"C:/New_Tech/Grenoble")
+    elif config.FTP_USER == "admin_marseille":
+        os_manager.change_directory(r"C:/New_Tech/Marseille")
+    elif config.FTP_USER == "admin_rennes":
+        os_manager.change_directory(r"C:/New_Tech/Rennes")
+    
     while True:
         print("\n--- Menu OS ---")
         print(f"Répertoire actuel : {os_manager.get_current_directory()}")
@@ -29,15 +38,30 @@ def menu_os():
             os_manager.change_directory(path)
 
         elif choice == "3":
-            path = input("Chemin du dossier à créer : ")
+            if config.FTP_USER == "admin":
+                path = "c:/New_Tech/" + input("Nom du dossier à créer : ")
+            elif config.FTP_USER == "admin_grenoble":
+                path = "c:/New_Tech/Grenoble/" + input("Nom du dossier à créer : ")
+            elif config.FTP_USER == "admin_marseille":
+                path = "c:/New_Tech/Marseille/" + input("Nom du dossier à créer : ")
+            elif config.FTP_USER == "admin_rennes": 
+                path = "c:/New_Tech/Rennes/" + input("Nom du dossier à créer : ")
             os_manager.add_directory(path)
 
         elif choice == "4":
-            path = input("Chemin du fichier à créer : ")
+            if config.FTP_USER == "admin":
+                path = "c:/New_Tech/" + input("Chemin du fichier à créer : ")
+            elif config.FTP_USER == "admin_grenoble":
+                path = "c:/New_Tech/Grenoble/" + input("Chemin du fichier à créer : ")
+            elif config.FTP_USER == "admin_marseille":
+                path = "c:/New_Tech/Marseille/" + input("Chemin du fichier à créer : ")
+            elif config.FTP_USER == "admin_rennes": 
+                path = "c:/New_Tech/Rennes/" + input("Chemin du fichier à créer : ")
             content = input("Contenu (laisser vide si aucun) : ")
             os_manager.add_file(path, content)
 
         elif choice == "5":
+        
             old_name = input("Nom actuel : ")
             new_name = input("Nouveau nom : ")
             os_manager.rename_item(old_name, new_name)
