@@ -2,7 +2,7 @@ import os
 import shutil
 import subprocess
 import sys
-from config import ROOT_DIR, REGIONS, FTP_USER, FTP_PASS
+from config import FTP_USER
 from logger import log_action, setup_logger, setup_logger_grenoble, setup_logger_marseille, setup_logger_rennes
 import menu
 from ftp_manager import connect_ftp

@@ -1,5 +1,6 @@
 import log_manager
 from logger import log_action
+# Menu pour afficher les logs d'activité pour les super administrateurs
 def menu_log_Sadmin():
     """Menu pour afficher les logs d'activité."""
     while True:
@@ -41,8 +42,11 @@ def menu_log_Sadmin():
             print("Retour au menu principal")
             break
         else:
-            print("Choix invalide, veuillez réessayer.")    
-
+            print("Choix invalide, veuillez réessayer.")
+            log_action("Choix invalide dans le menu des logs")
+            continue
+        
+# Menu pour afficher les logs d'activité pour les administrateurs spécifiques (Grenoble, Marseille, Rennes)
 def menu_log_grenoble():
     """Menu pour afficher les logs d'activité."""
     while True:

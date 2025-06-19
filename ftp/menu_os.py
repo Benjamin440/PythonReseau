@@ -16,7 +16,6 @@ def menu_os():
     while True:
         print("\n--- Menu OS ---")
         print(f"Répertoire actuel : {os_manager.get_current_directory()}")
-
         print("1. Lister les fichiers et dossiers")
         print("2. Changer de répertoire")
         print("3. Créer un dossier")

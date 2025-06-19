@@ -282,3 +282,21 @@
 2025-06-19 15:13:29,762 - INFO - Demarrage du menu Admin
 2025-06-19 15:13:29,762 - INFO - Acces au menu general
 2025-06-19 15:13:31,727 - INFO - Sortie du programme
+2025-06-19 19:10:15,143 - INFO - Initialisation du logger pour l'utilisateur standard
+2025-06-19 19:10:15,148 - INFO - Demarrage du programme de gestion SGF
+2025-06-19 19:10:15,190 - INFO - Connexionn reussi avec l'FTP 127.0.0.1:21 en tant que admin
+2025-06-19 19:10:15,195 - INFO - Demarrage du menu Super Admin
+2025-06-19 19:10:15,195 - INFO - Acces au menu general
+2025-06-19 19:10:20,031 - INFO - Lancement du scan reseau
+2025-06-19 19:10:24,390 - INFO - Acces au menu general
+2025-06-19 19:10:28,270 - INFO - Sortie du programme
+2025-06-19 19:10:43,062 - INFO - Initialisation du logger pour l'utilisateur standard
+2025-06-19 19:10:43,062 - INFO - Demarrage du programme de gestion SGF
+2025-06-19 19:10:43,113 - INFO - Connexionn reussi avec l'FTP 127.0.0.1:21 en tant que admin
+2025-06-19 19:10:43,121 - INFO - Demarrage du menu Super Admin
+2025-06-19 19:10:43,121 - INFO - Acces au menu general
+2025-06-19 19:10:45,233 - INFO - Acces au menu des logs
+2025-06-19 19:10:47,005 - INFO - Affichage des logs d'activité
+2025-06-19 19:11:17,325 - INFO - Retour au menu principal
+2025-06-19 19:11:17,325 - INFO - Acces au menu general
+2025-06-19 19:11:24,518 - INFO - Sortie du programme

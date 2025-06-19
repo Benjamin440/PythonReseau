@@ -3,10 +3,10 @@
 def afficher_f_logs():
     """Affiche les logs d'activité."""
     try:
-        with open("activity.log", "r", errors="ignore") as fichier:
-            for ligne in fichier:
+        with open("activity.log", "r", errors="ignore") as fichier: # Ouvrir le fichier en mode lecture
+            for ligne in fichier: # lire le fichier ligne par ligne
                 print(ligne.strip())  # strip() pour enlever les retours à la ligne
-    except FileNotFoundError:
+    except FileNotFoundError: # Si le fichier n'existe pas, afficher un message d'erreur
         print("Le fichier de log n'existe pas.")
 
 
