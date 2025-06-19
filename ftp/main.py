@@ -5,6 +5,7 @@ import sys
 from config import ROOT_DIR, REGIONS, FTP_USER, FTP_PASS
 from logger import log_action, setup_logger, setup_logger_grenoble, setup_logger_marseille, setup_logger_rennes
 import menu
+from ftp_manager import connect_ftp
 
 def clear_folder(folder_path):
     for filename in os.listdir(folder_path):
@@ -64,11 +65,16 @@ def main():
     log_action("Demarrage du programme de gestion SGF")
     print("=== Systeme de Gestion des Fichiers (SGF) ===")
 
-    if FTP_USER == "admin":
-        print("Bienvenue, Super Admin!")
-        menu.menu_super_admin()
-    else:
-        menu.menu_admin()
+    ftp = connect_ftp()
+    if ftp is None:
+        print(f"Erreur de connexion : Mot de passe incorrect ou identifiant incorrect")
+        return
+    else :
+        if FTP_USER == "admin":
+            print("Bienvenue, Super Admin!")
+            menu.menu_super_admin()
+        else:
+            menu.menu_admin()
 
 
 if __name__ == "__main__":

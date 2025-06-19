@@ -68,6 +68,10 @@ def menu_admin():
                 log_action("Acces au menu des logs pour Rennes")
                 menu_log.menu_log_rennes()
             break
+        elif choice == "4":
+            log_action("Sortie du programme")
+            print("Au revoir")
+            break
         else:
             print("Choix invalide, veuillez réessayer.")
             menu_admin()

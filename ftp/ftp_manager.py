@@ -4,12 +4,16 @@ from config import FTP_HOST, FTP_PORT, FTP_USER, FTP_PASS
 from logger import log_action, setup_logger
 
 def connect_ftp():
-    setup_logger()  # Ensure logger is set up
-    ftp = FTP()
-    ftp.connect(FTP_HOST, FTP_PORT)
-    ftp.login(FTP_USER, FTP_PASS)
-    log_action(f"Connexionn reussi avec l'FTP {FTP_HOST}:{FTP_PORT} en tant que {FTP_USER}")
-    return ftp
+    try:
+        setup_logger()  # Ensure logger is set up
+        ftp = FTP()
+        ftp.connect(FTP_HOST, FTP_PORT)
+        ftp.login(FTP_USER, FTP_PASS)
+        log_action(f"Connexionn reussi avec l'FTP {FTP_HOST}:{FTP_PORT} en tant que {FTP_USER}")
+        return ftp
+    except Exception as e:
+        log_action(f"Erreur de connexion{FTP_HOST}:{FTP_PORT} : {e}")
+        return None
 
 def list_dossier(ftp):
     print("Contenu du répertoire distant :")

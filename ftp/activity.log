@@ -242,3 +242,43 @@
 2025-06-18 23:39:00,018 - INFO - Current directory: C:\New_Tech
 2025-06-18 23:39:07,565 - INFO - Restored c:/new_tech/rennes/test2 from trash
 2025-06-18 23:39:07,565 - INFO - Current directory: C:\New_Tech
+2025-06-19 15:05:34,211 - INFO - Initialisation du logger pour l'utilisateur standard
+2025-06-19 15:05:34,211 - INFO - Demarrage du programme de gestion SGF
+2025-06-19 15:05:34,211 - INFO - Demarrage du menu Super Admin
+2025-06-19 15:05:34,212 - INFO - Acces au menu general
+2025-06-19 15:05:37,271 - INFO - Sortie du programme
+2025-06-19 15:05:41,383 - INFO - Initialisation du logger pour l'utilisateur standard
+2025-06-19 15:05:41,383 - INFO - Demarrage du programme de gestion SGF
+2025-06-19 15:05:41,383 - INFO - Demarrage du menu Admin
+2025-06-19 15:05:41,383 - INFO - Acces au menu general
+2025-06-19 15:09:58,633 - INFO - Demarrage du menu Admin
+2025-06-19 15:09:58,633 - INFO - Acces au menu general
+2025-06-19 15:10:00,628 - INFO - Demarrage du menu Admin
+2025-06-19 15:10:00,628 - INFO - Acces au menu general
+2025-06-19 15:11:08,484 - INFO - Initialisation du logger pour l'utilisateur standard
+2025-06-19 15:11:08,484 - INFO - Demarrage du programme de gestion SGF
+2025-06-19 15:11:08,602 - INFO - Connexionn reussi avec l'FTP 127.0.0.1:21 en tant que admin
+2025-06-19 15:11:08,602 - INFO - Demarrage du menu Super Admin
+2025-06-19 15:11:08,602 - INFO - Acces au menu general
+2025-06-19 15:11:10,562 - INFO - Sortie du programme
+2025-06-19 15:11:15,266 - INFO - Initialisation du logger pour l'utilisateur standard
+2025-06-19 15:11:15,266 - INFO - Demarrage du programme de gestion SGF
+2025-06-19 15:11:15,274 - INFO - Erreur de connexion à l'FTP 127.0.0.1:21 : 530 Login incorrect.
+2025-06-19 15:12:07,258 - INFO - Initialisation du logger pour l'utilisateur standard
+2025-06-19 15:12:07,258 - INFO - Demarrage du programme de gestion SGF
+2025-06-19 15:12:07,267 - INFO - Erreur de connexion127.0.0.1:21 : 530 Login incorrect.
+2025-06-19 15:13:07,354 - INFO - Initialisation du logger pour l'utilisateur standard
+2025-06-19 15:13:07,354 - INFO - Demarrage du programme de gestion SGF
+2025-06-19 15:13:07,361 - INFO - Erreur de connexion127.0.0.1:21 : 530 Login incorrect.
+2025-06-19 15:13:14,790 - INFO - Initialisation du logger pour l'utilisateur standard
+2025-06-19 15:13:14,790 - INFO - Demarrage du programme de gestion SGF
+2025-06-19 15:13:14,838 - INFO - Connexionn reussi avec l'FTP 127.0.0.1:21 en tant que admin
+2025-06-19 15:13:14,838 - INFO - Demarrage du menu Super Admin
+2025-06-19 15:13:14,838 - INFO - Acces au menu general
+2025-06-19 15:13:18,203 - INFO - Sortie du programme
+2025-06-19 15:13:29,714 - INFO - Initialisation du logger pour l'utilisateur standard
+2025-06-19 15:13:29,714 - INFO - Demarrage du programme de gestion SGF
+2025-06-19 15:13:29,762 - INFO - Connexionn reussi avec l'FTP 127.0.0.1:21 en tant que admin_Rennes
+2025-06-19 15:13:29,762 - INFO - Demarrage du menu Admin
+2025-06-19 15:13:29,762 - INFO - Acces au menu general
+2025-06-19 15:13:31,727 - INFO - Sortie du programme
