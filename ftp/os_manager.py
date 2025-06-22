@@ -2,9 +2,41 @@ import os
 import shutil
 from logger import log_action
 import time
+import subprocess
+import shutil
 
 TRASH_DIR = r"C:/New_Tech/trash"
 RESTORE_METADATA = os.path.join(TRASH_DIR, "restore_info.txt")
+
+def clear_folder(folder_path):
+    for filename in os.listdir(folder_path):
+        file_path = os.path.join(folder_path, filename)
+        try:
+            if os.path.isfile(file_path) or os.path.islink(file_path):
+                os.unlink(file_path)
+            elif os.path.isdir(file_path):
+                shutil.rmtree(file_path)
+        except Exception as e:
+            print(f'Erreur lors de la suppression de {file_path}: {e}')
+
+def create_scheduled_task(task_name, script_path, python_path, time="09:00"):
+    cmd = [
+        "schtasks",
+        "/create",
+        "/tn", task_name,
+        "/tr", f'"{python_path}" "{script_path}"',
+        "/sc", "daily",
+        "/st", time,
+        "/f"
+    ]
+    try:
+        result = subprocess.run(cmd, capture_output=True, text=True)
+        if result.returncode == 0:
+            print("Tâche planifiée créée/mise à jour avec succès.")
+        else:
+            print(f"Erreur lors de la création de la tâche planifiée : {result.stderr}")
+    except Exception as e:
+        print(f"Exception lors de la création de la tâche : {e}")
 
 def list_directory(path):
     try:
