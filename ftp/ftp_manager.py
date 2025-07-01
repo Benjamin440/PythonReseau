@@ -2,6 +2,7 @@ from ftplib import FTP
 import os
 from config import FTP_HOST, FTP_PORT, FTP_USER, FTP_PASS
 from logger import log_action, setup_logger
+import getpass
 
 def connect_ftp():
     try:
@@ -14,6 +15,9 @@ def connect_ftp():
     except Exception as e:
         log_action(f"Erreur de connexion{FTP_HOST}:{FTP_PORT} : {e}")
         return None
+    
+    from ftplib import FTP
+
 
 def list_dossier(ftp):
     print("Contenu du répertoire distant :")

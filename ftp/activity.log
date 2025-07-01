@@ -300,3 +300,150 @@
 2025-06-19 19:11:17,325 - INFO - Retour au menu principal
 2025-06-19 19:11:17,325 - INFO - Acces au menu general
 2025-06-19 19:11:24,518 - INFO - Sortie du programme
+2025-07-01 08:31:45,066 - INFO - Initialisation du logger pour l'utilisateur standard
+2025-07-01 08:31:45,066 - INFO - Demarrage du programme de gestion SGF
+2025-07-01 08:31:45,134 - INFO - Connexionn reussi avec l'FTP 127.0.0.1:21 en tant que admin
+2025-07-01 08:31:45,134 - INFO - Demarrage du menu Super Admin
+2025-07-01 08:31:45,134 - INFO - Acces au menu general
+2025-07-01 08:42:52,235 - INFO - Sortie du programme
+2025-07-01 08:43:59,880 - INFO - Initialisation du logger pour l'utilisateur standard
+2025-07-01 08:43:59,880 - INFO - Demarrage du programme de gestion SGF
+2025-07-01 08:43:59,917 - INFO - Erreur de connexion127.0.0.1:21 : 530 Login incorrect.
+2025-07-01 08:44:15,034 - INFO - Initialisation du logger pour l'utilisateur standard
+2025-07-01 08:44:15,034 - INFO - Demarrage du programme de gestion SGF
+2025-07-01 08:44:15,066 - INFO - Erreur de connexion127.0.0.1:21 : 530 Login incorrect.
+2025-07-01 08:44:28,609 - INFO - Initialisation du logger pour l'utilisateur standard
+2025-07-01 08:44:28,609 - INFO - Demarrage du programme de gestion SGF
+2025-07-01 08:44:28,636 - INFO - Connexionn reussi avec l'FTP 127.0.0.1:21 en tant que admin_Grenoble
+2025-07-01 08:44:28,636 - INFO - Demarrage du menu Admin
+2025-07-01 08:44:28,637 - INFO - Acces au menu general
+2025-07-01 08:46:00,256 - INFO - Initialisation du logger pour l'utilisateur standard
+2025-07-01 08:46:00,256 - INFO - Demarrage du programme de gestion SGF
+2025-07-01 08:46:00,262 - INFO - Connexionn reussi avec l'FTP 127.0.0.1:21 en tant que admin_Grenoble
+2025-07-01 08:46:00,262 - INFO - Demarrage du menu Admin
+2025-07-01 08:46:00,262 - INFO - Acces au menu general
+2025-07-01 08:46:02,326 - INFO - Acces au menu FTP
+2025-07-01 08:46:02,346 - INFO - Connexionn reussi avec l'FTP 127.0.0.1:21 en tant que admin_Grenoble
+2025-07-01 08:46:13,903 - INFO - Created directory: Test on FTP.
+2025-07-01 08:46:53,122 - INFO - Acces au menu general
+2025-07-01 08:46:55,068 - INFO - Sortie du programme
+2025-07-01 08:47:02,361 - INFO - Initialisation du logger pour l'utilisateur standard
+2025-07-01 08:47:02,361 - INFO - Demarrage du programme de gestion SGF
+2025-07-01 08:47:02,382 - INFO - Connexionn reussi avec l'FTP 127.0.0.1:21 en tant que admin
+2025-07-01 08:47:02,382 - INFO - Demarrage du menu Super Admin
+2025-07-01 08:47:02,382 - INFO - Acces au menu general
+2025-07-01 08:47:10,909 - INFO - Acces au menu des logs
+2025-07-01 08:47:17,153 - INFO - Affichage des logs d'activité pour Rennes
+2025-07-01 08:47:28,259 - INFO - Affichage des logs d'activité pour Marseille
+2025-07-01 08:47:52,103 - INFO - Retour au menu principal
+2025-07-01 08:47:52,103 - INFO - Acces au menu general
+2025-07-01 08:47:55,628 - INFO - Acces au menu FTP
+2025-07-01 08:47:55,650 - INFO - Connexionn reussi avec l'FTP 127.0.0.1:21 en tant que admin
+2025-07-01 08:48:18,895 - INFO - Changed directory to: Grenoble on FTP.
+2025-07-01 08:48:29,934 - INFO - Retour au dossier parent : /
+2025-07-01 08:48:32,976 - INFO - Changed directory to: Grenoble on FTP.
+2025-07-01 08:48:48,342 - INFO - Changed directory to: Test on FTP.
+2025-07-01 08:48:55,550 - INFO - Retour au dossier parent : /Grenoble
+2025-07-01 08:49:17,616 - INFO - Created directory: TEST2 on FTP.
+2025-07-01 08:49:27,058 - INFO - Acces au menu general
+2025-07-01 08:49:29,009 - INFO - Acces au menu des logs
+2025-07-01 08:49:31,354 - INFO - Affichage des logs d'activité
+2025-07-01 08:49:52,005 - INFO - Retour au menu principal
+2025-07-01 08:49:52,005 - INFO - Acces au menu general
+2025-07-01 08:49:56,057 - INFO - Acces au menu OS
+2025-07-01 08:49:56,057 - INFO - Changed directory to: C:/New_Tech
+2025-07-01 08:49:56,057 - INFO - Current directory: C:\New_Tech
+2025-07-01 08:51:04,982 - INFO - Changed directory to: Rennes
+2025-07-01 08:51:04,983 - INFO - Current directory: C:\New_Tech\Rennes
+2025-07-01 08:51:46,782 - INFO - Listed directory: C:\New_Tech\Rennes
+2025-07-01 08:51:46,782 - INFO - Current directory: C:\New_Tech\Rennes
+2025-07-01 08:53:07,258 - INFO - Moved to trash instead of deleting: Ben
+2025-07-01 08:53:07,274 - INFO - Current directory: C:\New_Tech\Rennes
+2025-07-01 08:56:29,689 - INFO - Error restoring item: [WinError 3] Le chemin d’accès spécifié est introuvable: ''
+2025-07-01 08:56:29,689 - INFO - Current directory: C:\New_Tech\Rennes
+2025-07-01 08:57:11,962 - INFO - Error restoring item: [WinError 3] Le chemin d’accès spécifié est introuvable: ''
+2025-07-01 08:57:11,962 - INFO - Current directory: C:\New_Tech\Rennes
+2025-07-01 08:57:39,830 - INFO - Moved to trash instead of deleting: BEN3
+2025-07-01 08:57:39,830 - INFO - Current directory: C:\New_Tech\Rennes
+2025-07-01 08:57:43,852 - INFO - Error restoring item: [WinError 3] Le chemin d’accès spécifié est introuvable: ''
+2025-07-01 08:57:43,852 - INFO - Current directory: C:\New_Tech\Rennes
+2025-07-01 08:58:03,512 - INFO - Current directory: C:\New_Tech\Rennes
+2025-07-01 08:58:39,682 - INFO - Listed directory: C:\New_Tech\Rennes
+2025-07-01 08:58:39,682 - INFO - Current directory: C:\New_Tech\Rennes
+2025-07-01 08:58:57,039 - INFO - Moved to trash instead of deleting: BEN2.txt
+2025-07-01 08:58:57,039 - INFO - Current directory: C:\New_Tech\Rennes
+2025-07-01 08:59:03,423 - INFO - Error restoring item: [WinError 3] Le chemin d’accès spécifié est introuvable: ''
+2025-07-01 08:59:03,423 - INFO - Current directory: C:\New_Tech\Rennes
+2025-07-01 08:59:41,086 - INFO - Acces au menu general
+2025-07-01 08:59:43,347 - INFO - Acces au menu FTP
+2025-07-01 08:59:43,369 - INFO - Connexionn reussi avec l'FTP 127.0.0.1:21 en tant que admin
+2025-07-01 09:07:41,883 - INFO - Acces au menu general
+2025-07-01 09:07:44,113 - INFO - Sortie du programme
+2025-07-01 09:07:55,678 - INFO - Initialisation du logger pour l'utilisateur standard
+2025-07-01 09:07:55,678 - INFO - Demarrage du programme de gestion SGF
+2025-07-01 09:07:55,708 - INFO - Connexionn reussi avec l'FTP 127.0.0.1:21 en tant que admin_Marseille
+2025-07-01 09:07:55,708 - INFO - Demarrage du menu Admin
+2025-07-01 09:07:55,709 - INFO - Acces au menu general
+2025-07-01 09:08:40,153 - INFO - Initialisation du logger pour l'utilisateur standard
+2025-07-01 09:08:40,153 - INFO - Demarrage du programme de gestion SGF
+2025-07-01 09:08:40,194 - INFO - Erreur de connexion127.0.0.1:21 : 530 Login incorrect.
+2025-07-01 09:08:50,361 - INFO - Initialisation du logger pour l'utilisateur standard
+2025-07-01 09:08:50,361 - INFO - Demarrage du programme de gestion SGF
+2025-07-01 09:08:50,392 - INFO - Connexionn reussi avec l'FTP 127.0.0.1:21 en tant que admin_Marseille
+2025-07-01 09:08:50,392 - INFO - Demarrage du menu Admin
+2025-07-01 09:08:50,392 - INFO - Acces au menu general
+2025-07-01 09:08:52,268 - INFO - Acces au menu FTP
+2025-07-01 09:08:52,301 - INFO - Connexionn reussi avec l'FTP 127.0.0.1:21 en tant que admin_Marseille
+2025-07-01 09:09:03,079 - INFO - Created directory: REN2 on FTP.
+2025-07-01 09:09:08,409 - INFO - Acces au menu general
+2025-07-01 09:12:24,486 - INFO - Initialisation du logger pour l'utilisateur standard
+2025-07-01 09:12:24,486 - INFO - Demarrage du programme de gestion SGF
+2025-07-01 09:12:24,506 - INFO - Connexionn reussi avec l'FTP 127.0.0.1:21 en tant que admin_Marseille
+2025-07-01 09:12:24,506 - INFO - Demarrage du menu Admin
+2025-07-01 09:12:24,506 - INFO - Acces au menu general
+2025-07-01 09:12:29,373 - INFO - Acces au menu FTP
+2025-07-01 09:12:29,392 - INFO - Connexionn reussi avec l'FTP 127.0.0.1:21 en tant que admin_Marseille
+2025-07-01 09:12:43,794 - INFO - Error renaming BEN2 to BEN44: 550 Unknown error
+2025-07-01 09:13:02,654 - INFO - Renamed REN2 to BEN44 on FTP.
+2025-07-01 09:14:16,690 - INFO - Acces au menu general
+2025-07-01 09:14:23,887 - INFO - Sortie du programme
+2025-07-01 09:14:37,800 - INFO - Initialisation du logger pour l'utilisateur standard
+2025-07-01 09:14:37,800 - INFO - Demarrage du programme de gestion SGF
+2025-07-01 09:14:37,823 - INFO - Connexionn reussi avec l'FTP 127.0.0.1:21 en tant que admin_Grenoble
+2025-07-01 09:14:37,823 - INFO - Demarrage du menu Admin
+2025-07-01 09:14:37,823 - INFO - Acces au menu general
+2025-07-01 09:14:39,531 - INFO - Acces au menu FTP
+2025-07-01 09:14:39,566 - INFO - Connexionn reussi avec l'FTP 127.0.0.1:21 en tant que admin_Grenoble
+2025-07-01 09:14:52,466 - INFO - Renamed TEST2 to TES44 on FTP.
+2025-07-01 09:14:59,606 - INFO - Acces au menu general
+2025-07-01 09:16:05,313 - INFO - Initialisation du logger pour l'utilisateur standard
+2025-07-01 09:16:05,314 - INFO - Demarrage du programme de gestion SGF
+2025-07-01 09:16:05,340 - INFO - Erreur de connexion127.0.0.1:21 : 530 Login incorrect.
+2025-07-01 09:16:12,382 - INFO - Initialisation du logger pour l'utilisateur standard
+2025-07-01 09:16:12,382 - INFO - Demarrage du programme de gestion SGF
+2025-07-01 09:16:12,419 - INFO - Connexionn reussi avec l'FTP 127.0.0.1:21 en tant que admin
+2025-07-01 09:16:12,419 - INFO - Demarrage du menu Super Admin
+2025-07-01 09:16:12,419 - INFO - Acces au menu general
+2025-07-01 09:16:17,182 - INFO - Lancement du scan de port
+2025-07-01 09:28:46,561 - INFO - Initialisation du logger pour l'utilisateur standard
+2025-07-01 09:28:46,564 - INFO - Demarrage du programme de gestion SGF
+2025-07-01 09:28:46,586 - INFO - Erreur de connexion127.0.0.1:21 : 530 Login incorrect.
+2025-07-01 09:31:39,359 - INFO - Initialisation du logger pour l'utilisateur standard
+2025-07-01 09:31:39,359 - INFO - Demarrage du programme de gestion SGF
+2025-07-01 09:31:55,370 - INFO - Erreur de connexion 127.0.0.1:21 : 530 Login incorrect.
+2025-07-01 09:32:02,888 - INFO - Connexion réussie à l'FTP 127.0.0.1:21 en tant que admin
+2025-07-01 09:32:02,888 - INFO - Demarrage du menu Super Admin
+2025-07-01 09:32:02,888 - INFO - Acces au menu general
+2025-07-01 09:32:07,887 - INFO - Sortie du programme
+2025-07-01 09:33:49,492 - INFO - Initialisation du logger pour l'utilisateur standard
+2025-07-01 09:33:49,492 - INFO - Demarrage du programme de gestion SGF
+2025-07-01 09:33:49,520 - INFO - Erreur de connexion 127.0.0.1:21 : 530 Login incorrect.
+2025-07-01 09:33:49,543 - INFO - Erreur de connexion 127.0.0.1:21 : 530 Login incorrect.
+2025-07-01 09:33:49,574 - INFO - Erreur de connexion 127.0.0.1:21 : 530 Login incorrect.
+2025-07-01 09:34:45,541 - INFO - Initialisation du logger pour l'utilisateur standard
+2025-07-01 09:34:45,541 - INFO - Demarrage du programme de gestion SGF
+2025-07-01 09:34:55,734 - INFO - Erreur de connexion 127.0.0.1:21 : 530 Login incorrect.
+2025-07-01 09:35:20,984 - INFO - Initialisation du logger pour l'utilisateur standard
+2025-07-01 09:35:20,984 - INFO - Demarrage du programme de gestion SGF
+2025-07-01 09:37:47,156 - INFO - Initialisation du logger pour l'utilisateur standard
+2025-07-01 09:37:47,156 - INFO - Demarrage du programme de gestion SGF

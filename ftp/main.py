@@ -36,6 +36,7 @@ def main():
     print("=== Systeme de Gestion des Fichiers (SGF) ===")
 
     ftp = connect_ftp()
+    
     if ftp is None:
         print(f"Erreur de connexion : Mot de passe incorrect ou identifiant incorrect")
         return
