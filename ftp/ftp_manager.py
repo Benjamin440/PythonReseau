@@ -5,18 +5,20 @@ from logger import log_action, setup_logger
 import getpass
 
 def connect_ftp():
-    try:
-        setup_logger()  # Ensure logger is set up
-        ftp = FTP()
-        ftp.connect(FTP_HOST, FTP_PORT)
-        ftp.login(FTP_USER, FTP_PASS)
-        log_action(f"Connexionn reussi avec l'FTP {FTP_HOST}:{FTP_PORT} en tant que {FTP_USER}")
-        return ftp
-    except Exception as e:
-        log_action(f"Erreur de connexion{FTP_HOST}:{FTP_PORT} : {e}")
-        return None
-    
-    from ftplib import FTP
+    setup_logger()
+    ftp = FTP()
+    for attempt in range(3):
+        try:
+            ftp.connect(FTP_HOST, FTP_PORT)
+            password = getpass.getpass(f"Mot de passe pour {FTP_USER} (tentative {attempt+1}/3): ")
+            ftp.login(FTP_USER, password)
+            log_action(f"Connexion réussie avec l'FTP {FTP_HOST}:{FTP_PORT} en tant que {FTP_USER}")
+            return ftp
+        except Exception as e:
+            log_action(f"Erreur de connexion {FTP_HOST}:{FTP_PORT} : {e}")
+            print("Mot de passe incorrect ou erreur de connexion.")
+    print("Trop de tentatives échouées. Arrêt du programme.")
+    return None
 
 
 def list_dossier(ftp):

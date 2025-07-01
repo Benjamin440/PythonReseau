@@ -447,3 +447,38 @@
 2025-07-01 09:35:20,984 - INFO - Demarrage du programme de gestion SGF
 2025-07-01 09:37:47,156 - INFO - Initialisation du logger pour l'utilisateur standard
 2025-07-01 09:37:47,156 - INFO - Demarrage du programme de gestion SGF
+2025-07-01 14:22:53,024 - INFO - Initialisation du logger pour l'utilisateur standard
+2025-07-01 14:22:53,024 - INFO - Demarrage du programme de gestion SGF
+2025-07-01 14:22:56,163 - INFO - Erreur de connexion 127.0.0.1:21 : 530 Login incorrect.
+2025-07-01 14:22:57,181 - INFO - Erreur de connexion 127.0.0.1:21 : 530 Login incorrect.
+2025-07-01 14:22:57,807 - INFO - Erreur de connexion 127.0.0.1:21 : 530 Login incorrect.
+2025-07-01 14:23:21,011 - INFO - Initialisation du logger pour l'utilisateur standard
+2025-07-01 14:23:21,011 - INFO - Demarrage du programme de gestion SGF
+2025-07-01 14:23:25,901 - INFO - Erreur de connexion 127.0.0.1:21 : 530 Login incorrect.
+2025-07-01 14:23:34,034 - INFO - Erreur de connexion 127.0.0.1:21 : 530 Login incorrect.
+2025-07-01 14:23:39,264 - INFO - Erreur de connexion 127.0.0.1:21 : 530 Login incorrect.
+2025-07-01 14:24:49,115 - INFO - Initialisation du logger pour l'utilisateur standard
+2025-07-01 14:24:49,115 - INFO - Demarrage du programme de gestion SGF
+2025-07-01 14:24:49,120 - INFO - Erreur de connexion 127.0.0.1:21 : 530 Login incorrect.
+2025-07-01 14:24:49,122 - INFO - Erreur de connexion 127.0.0.1:21 : 530 Login incorrect.
+2025-07-01 14:24:49,124 - INFO - Erreur de connexion 127.0.0.1:21 : 530 Login incorrect.
+2025-07-01 14:25:23,445 - INFO - Initialisation du logger pour l'utilisateur standard
+2025-07-01 14:25:23,445 - INFO - Demarrage du programme de gestion SGF
+2025-07-01 14:25:23,450 - INFO - Erreur de connexion 127.0.0.1:21 : 530 Login incorrect.
+2025-07-01 14:25:23,451 - INFO - Erreur de connexion 127.0.0.1:21 : 530 Login incorrect.
+2025-07-01 14:27:44,305 - INFO - Initialisation du logger pour l'utilisateur standard
+2025-07-01 14:27:44,305 - INFO - Demarrage du programme de gestion SGF
+2025-07-01 14:27:50,046 - INFO - Erreur de connexion 127.0.0.1:21 : 530 Login incorrect.
+2025-07-01 14:27:59,460 - INFO - Connexion réussie avec l'FTP 127.0.0.1:21 en tant que admin
+2025-07-01 14:27:59,461 - INFO - Demarrage du menu Super Admin
+2025-07-01 14:27:59,461 - INFO - Acces au menu general
+2025-07-01 14:28:06,248 - INFO - Initialisation du logger pour l'utilisateur standard
+2025-07-01 14:28:06,249 - INFO - Demarrage du programme de gestion SGF
+2025-07-01 14:28:13,129 - INFO - Connexion réussie avec l'FTP 127.0.0.1:21 en tant que admin
+2025-07-01 14:28:13,130 - INFO - Demarrage du menu Super Admin
+2025-07-01 14:28:13,130 - INFO - Acces au menu general
+2025-07-01 14:28:18,078 - INFO - Initialisation du logger pour l'utilisateur standard
+2025-07-01 14:28:18,078 - INFO - Demarrage du programme de gestion SGF
+2025-07-01 14:28:18,325 - INFO - Erreur de connexion 127.0.0.1:21 : 530 Login incorrect.
+2025-07-01 14:28:18,915 - INFO - Erreur de connexion 127.0.0.1:21 : 530 Login incorrect.
+2025-07-01 14:28:19,472 - INFO - Erreur de connexion 127.0.0.1:21 : 530 Login incorrect.
