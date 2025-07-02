@@ -3,8 +3,7 @@ from logger import log_action
 
 CHOICE_PROMPT = "Entrez votre choix: "
 
-def menu_ftp():
-    ftp = ftp_manager.connect_ftp()
+def menu_ftp(ftp):
 
     while True:
         print("--- Menu FTP ---")

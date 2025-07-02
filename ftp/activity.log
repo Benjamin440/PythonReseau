@@ -482,3 +482,18 @@
 2025-07-01 14:28:18,325 - INFO - Erreur de connexion 127.0.0.1:21 : 530 Login incorrect.
 2025-07-01 14:28:18,915 - INFO - Erreur de connexion 127.0.0.1:21 : 530 Login incorrect.
 2025-07-01 14:28:19,472 - INFO - Erreur de connexion 127.0.0.1:21 : 530 Login incorrect.
+2025-07-02 14:51:49,288 - INFO - Initialisation du logger pour l'utilisateur standard
+2025-07-02 14:51:49,289 - INFO - Demarrage du programme de gestion SGF
+2025-07-02 14:51:55,098 - INFO - Connexion réussie avec l'FTP 127.0.0.1:21 en tant que admin
+2025-07-02 14:51:55,099 - INFO - Demarrage du menu Super Admin
+2025-07-02 14:51:55,099 - INFO - Acces au menu general
+2025-07-02 14:51:58,121 - INFO - Acces au menu FTP
+2025-07-02 14:52:16,767 - INFO - Changed directory to: Rennes on FTP.
+2025-07-02 14:53:49,617 - INFO - Acces au menu general
+2025-07-02 14:53:52,609 - INFO - Acces au menu OS
+2025-07-02 14:53:52,609 - INFO - Changed directory to: C:/New_Tech
+2025-07-02 14:53:52,611 - INFO - Current directory: C:\New_Tech
+2025-07-02 14:53:57,083 - INFO - Current directory: C:\New_Tech
+2025-07-02 14:53:57,083 - INFO - Listed directory: C:\New_Tech
+2025-07-02 14:53:57,086 - INFO - Current directory: C:\New_Tech
+2025-07-02 14:54:04,665 - INFO - Acces au menu general

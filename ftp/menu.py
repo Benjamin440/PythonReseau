@@ -6,8 +6,9 @@ import menu_log
 from logger import log_action
 from config import FTP_USER
 
+
 # Creation du menu pour les super administrateurs
-def menu_super_admin():
+def menu_super_admin(ftp):
     log_action("Demarrage du menu Super Admin")#Alimentation du fichier de log
     while True: # Boucle infinie pour le menu
         log_action("Acces au menu general")
@@ -27,7 +28,7 @@ def menu_super_admin():
             menu_scan_reseau.scan() # Lancer le scan réseau
         elif choice == "3":
             log_action("Acces au menu FTP")
-            menu_ftp.menu_ftp() # Accéder au menu FTP
+            menu_ftp.menu_ftp(ftp) # Accéder au menu FTP
         elif choice == "4":
             log_action("Acces au menu OS")
             menu_os.menu_os() # Accéder au menu OS
@@ -43,7 +44,7 @@ def menu_super_admin():
             menu_super_admin()
 
 # Creation du menu pour les administrateurs spécifiques (Grenoble, Marseille, Rennes)
-def menu_admin():
+def menu_admin(ftp):
     log_action("Demarrage du menu Admin")#Alimentation du fichier de log
     while True: # Boucle infinie pour le menu
         log_action("Acces au menu general")
@@ -55,7 +56,7 @@ def menu_admin():
         choice = input("Entrez votre choix: ")
         if choice == "1":
             log_action("Acces au menu FTP")
-            menu_ftp.menu_ftp()
+            menu_ftp.menu_ftp(ftp)
         elif choice == "2":
             log_action("Acces au menu OS")
             menu_os.menu_os()

@@ -43,9 +43,9 @@ def main():
     else :
         if FTP_USER == "admin":
             print("Bienvenue, Super Admin!")
-            menu.menu_super_admin()
+            menu.menu_super_admin(ftp)
         else:
-            menu.menu_admin()
+            menu.menu_admin(ftp)
 
 
 if __name__ == "__main__":
