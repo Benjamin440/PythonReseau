@@ -16,7 +16,7 @@ def main():
     current_script = os.path.abspath(sys.argv[0])
     python_executable = sys.executable
     task_name = "ClearTmpFolder"
-    execution_time = "09:00"
+    execution_time = "08:30"
     os_manager.create_scheduled_task(task_name, current_script, python_executable, execution_time)
 
     if FTP_USER == "admin_grenoble":

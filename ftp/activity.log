@@ -497,3 +497,32 @@
 2025-07-02 14:53:57,083 - INFO - Listed directory: C:\New_Tech
 2025-07-02 14:53:57,086 - INFO - Current directory: C:\New_Tech
 2025-07-02 14:54:04,665 - INFO - Acces au menu general
+2025-07-02 15:19:38,228 - INFO - Initialisation du logger pour l'utilisateur standard
+2025-07-02 15:19:38,229 - INFO - Demarrage du programme de gestion SGF
+2025-07-02 15:19:39,008 - INFO - Erreur de connexion 127.0.0.1:21 : 530 Login incorrect.
+2025-07-02 15:19:39,498 - INFO - Erreur de connexion 127.0.0.1:21 : 530 Login incorrect.
+2025-07-02 15:19:40,038 - INFO - Erreur de connexion 127.0.0.1:21 : 530 Login incorrect.
+2025-07-02 15:25:18,718 - INFO - Initialisation du logger pour l'utilisateur standard
+2025-07-02 15:25:18,718 - INFO - Demarrage du programme de gestion SGF
+2025-07-02 15:25:24,973 - INFO - Connexion réussie avec l'FTP 127.0.0.1:21 en tant que admin
+2025-07-02 15:25:24,974 - INFO - Demarrage du menu Super Admin
+2025-07-02 15:25:24,974 - INFO - Acces au menu general
+2025-07-02 15:25:46,540 - INFO - Lancement du scan de port
+2025-07-02 15:26:27,652 - INFO - Acces au menu general
+2025-07-02 15:26:29,631 - INFO - Lancement du scan reseau
+2025-07-02 15:27:23,046 - INFO - Initialisation du logger pour l'utilisateur standard
+2025-07-02 15:27:23,046 - INFO - Demarrage du programme de gestion SGF
+2025-07-02 15:28:02,119 - INFO - Connexion réussie avec l'FTP 127.0.0.1:21 en tant que admin
+2025-07-02 15:28:02,120 - INFO - Demarrage du menu Super Admin
+2025-07-02 15:28:02,120 - INFO - Acces au menu general
+2025-07-02 15:31:24,726 - INFO - Initialisation du logger pour l'utilisateur standard
+2025-07-02 15:31:24,726 - INFO - Demarrage du programme de gestion SGF
+2025-07-02 15:31:29,006 - INFO - Erreur de connexion 127.0.0.1:21 : 530 Login incorrect.
+2025-07-02 15:31:38,631 - INFO - Connexion réussie avec l'FTP 127.0.0.1:21 en tant que admin
+2025-07-02 15:31:38,632 - INFO - Demarrage du menu Super Admin
+2025-07-02 15:31:38,632 - INFO - Acces au menu general
+2025-07-02 15:32:35,137 - INFO - Initialisation du logger pour l'utilisateur standard
+2025-07-02 15:32:35,137 - INFO - Demarrage du programme de gestion SGF
+2025-07-02 15:32:58,646 - INFO - Connexion réussie avec l'FTP 127.0.0.1:21 en tant que admin
+2025-07-02 15:32:58,646 - INFO - Demarrage du menu Super Admin
+2025-07-02 15:32:58,646 - INFO - Acces au menu general

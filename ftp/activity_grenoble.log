@@ -53,3 +53,60 @@
 2025-06-18 22:49:58,612 - INFO - Current directory: C:\New_Tech\Grenoble
 2025-06-18 22:50:28,936 - INFO - Error creating file lol.txt: [WinError 3] Le chemin d’accès spécifié est introuvable: ''
 2025-06-18 22:50:28,936 - INFO - Current directory: C:\New_Tech\Grenoble
+2025-07-02 14:55:39,571 - INFO - Initialisation du logger pour Grenoble
+2025-07-02 14:55:39,571 - INFO - Demarrage du programme de gestion SGF
+2025-07-02 14:55:46,176 - INFO - Connexion réussie avec l'FTP 127.0.0.1:21 en tant que admin_grenoble
+2025-07-02 14:55:46,176 - INFO - Demarrage du menu Admin
+2025-07-02 14:55:46,176 - INFO - Acces au menu general
+2025-07-02 14:55:50,462 - INFO - Acces au menu FTP
+2025-07-02 14:56:29,034 - INFO - Error changing directory to Rennes: 550 Unknown error
+2025-07-02 14:58:05,233 - INFO - Created directory: pres on FTP.
+2025-07-02 14:58:16,558 - INFO - Changed directory to: pres on FTP.
+2025-07-02 15:00:29,969 - INFO - Initialisation du logger pour Grenoble
+2025-07-02 15:00:29,969 - INFO - Demarrage du programme de gestion SGF
+2025-07-02 15:00:35,570 - INFO - Connexion réussie avec l'FTP 127.0.0.1:21 en tant que admin_grenoble
+2025-07-02 15:00:35,570 - INFO - Demarrage du menu Admin
+2025-07-02 15:00:35,570 - INFO - Acces au menu general
+2025-07-02 15:00:38,052 - INFO - Acces au menu FTP
+2025-07-02 15:01:15,621 - INFO - Erreur upload de C:\Users\Quentin\Documents : [Errno 13] Permission denied: 'C:\\Users\\Quentin\\Documents'
+2025-07-02 15:01:34,808 - INFO - Initialisation du logger pour Grenoble
+2025-07-02 15:01:34,809 - INFO - Demarrage du programme de gestion SGF
+2025-07-02 15:01:39,466 - INFO - Connexion réussie avec l'FTP 127.0.0.1:21 en tant que admin_grenoble
+2025-07-02 15:01:39,467 - INFO - Demarrage du menu Admin
+2025-07-02 15:01:39,467 - INFO - Acces au menu general
+2025-07-02 15:01:41,696 - INFO - Acces au menu FTP
+2025-07-02 15:02:11,810 - INFO - Erreur upload de C:\Users\Quentin\Documents\fichierPython.txt : [Errno 2] No such file or directory: 'C:\\Users\\Quentin\\Documents\\fichierPython.txt'
+2025-07-02 15:02:53,202 - INFO - Erreur upload de C:/Users/Quentin/Documents/fichierPython.txt : [Errno 2] No such file or directory: 'C:/Users/Quentin/Documents/fichierPython.txt'
+2025-07-02 15:03:55,808 - INFO - Uploaded C:\Users\Quentin\Documents\fichierPython.txt to pres/fichierPython.txt on FTP.
+2025-07-02 15:05:00,131 - INFO - Initialisation du logger pour Grenoble
+2025-07-02 15:05:00,131 - INFO - Demarrage du programme de gestion SGF
+2025-07-02 15:05:06,359 - INFO - Connexion réussie avec l'FTP 127.0.0.1:21 en tant que admin_grenoble
+2025-07-02 15:05:06,359 - INFO - Demarrage du menu Admin
+2025-07-02 15:05:06,360 - INFO - Acces au menu general
+2025-07-02 15:05:07,974 - INFO - Acces au menu FTP
+2025-07-02 15:10:48,009 - INFO - Erreur deplacement /test \u2192 /dossier : 550 Permission denied
+2025-07-02 15:11:07,467 - INFO - Deplace : /test \u2192 /dossier/test
+2025-07-02 15:13:57,598 - INFO - Erreur deplacement /dossier \u2192 /test/dossier : 550 Couldn't open the directory
+2025-07-02 15:18:20,466 - INFO - Acces au menu general
+2025-07-02 15:18:22,194 - INFO - Acces au menu des logs pour Grenoble
+2025-07-02 15:18:24,897 - INFO - Affichage des logs d'activité
+2025-07-02 15:18:30,013 - INFO - Retour au menu principal
+2025-07-02 15:19:48,973 - INFO - Initialisation du logger pour Grenoble
+2025-07-02 15:19:48,974 - INFO - Demarrage du programme de gestion SGF
+2025-07-02 15:19:57,203 - INFO - Connexion réussie avec l'FTP 127.0.0.1:21 en tant que admin_grenoble
+2025-07-02 15:19:57,203 - INFO - Demarrage du menu Admin
+2025-07-02 15:19:57,203 - INFO - Acces au menu general
+2025-07-02 15:19:59,850 - INFO - Acces au menu FTP
+2025-07-02 15:20:28,935 - INFO - Error changing directory to /rennes: 550 Unknown error
+2025-07-02 15:20:39,562 - INFO - Created directory: pres on FTP.
+2025-07-02 15:20:45,637 - INFO - Changed directory to: pres on FTP.
+2025-07-02 15:21:27,943 - INFO - Erreur upload de C:\Users\Quentin\Documents\fichierpython.txt : 550 Couldn't open the file
+2025-07-02 15:22:12,060 - INFO - Uploaded C:\Users\Quentin\Documents\fichierpython.txt to fichierpython.txt on FTP.
+2025-07-02 15:22:44,598 - INFO - Dossier c/c existant ou erreur : 550 Unknown error
+2025-07-02 15:22:44,598 - INFO - Erreur d'accès à c : 550 Unknown error
+2025-07-02 15:23:51,108 - INFO - Erreur deplacement /test \u2192 /dossier : 550 Permission denied
+2025-07-02 15:24:12,855 - INFO - Deplace : /test \u2192 /dossier/test
+2025-07-02 15:24:34,214 - INFO - Acces au menu general
+2025-07-02 15:24:36,535 - INFO - Acces au menu des logs pour Grenoble
+2025-07-02 15:24:38,449 - INFO - Affichage des logs d'activité
+2025-07-02 15:24:41,981 - INFO - Retour au menu principal

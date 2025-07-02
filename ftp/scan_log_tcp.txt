@@ -357380,3 +357380,10 @@ Date : Tuesday 01 July 25 à 09:17:23
 | Port: 22235 | État: fermé      |
 +--------------------------+
 
+[TCP] Port 21 sur 127.0.0.1: ouvert
+Temps écoulé: 0.00 secondes
+Date : Wednesday 02 July 25 à 15:26:07
++--------------------------+
+| Port: 21    | État: ouvert     |
++--------------------------+
+
